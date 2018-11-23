@@ -1,0 +1,30 @@
+{
+    "extends": [
+      "standard",
+      "plugin:react/recommended"
+    ],
+    "plugins": [
+      "react"
+    ],
+    "rules": {
+      "comma-dangle": ["warn", {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "never",
+        "functions": "ignore"
+      }],
+      "key-spacing": ["warn", {
+        "beforeColon": false,
+        "afterColon": true,
+        "mode": "strict",
+        "align": "value"
+      }],
+      "sort-keys": ["warn", "asc", {"caseSensitive": true, "natural": false}]
+    },
+    "settings": {
+  		"react": {
+  			"version": "16.6.3"
+  		}
+  	}
+}
