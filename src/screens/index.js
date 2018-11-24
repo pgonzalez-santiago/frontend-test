@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 // Screens
-import MainScreen from './mainScreen.js'
+import MainScreen from './main.js'
 
 const NoMatch = () => (
   <span> No Found screen </span>
@@ -13,7 +13,7 @@ const AppRouter = () => (
     <Fragment>
       <Switch>
         <Route path="/" exact component={MainScreen} />
-        <Route path="/:repo" exact component={MainScreen} />
+        <Route path="/:repoName" exact component={MainScreen} />
         <Route component={NoMatch}/>
       </Switch>
     </Fragment>
