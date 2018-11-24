@@ -39,6 +39,12 @@
     background: $background-color;
     padding: 2.5em 1.5em 0;
     font-size: 1.15em;
+    overflow: hidden !important;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 
   .bm-cross-button, .bm-burger-button {

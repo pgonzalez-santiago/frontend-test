@@ -20,9 +20,79 @@ const Logo = styled.div`
 
 const SliderList = styled.div`
   padding-top: 15px;
+  overflow-y: scroll;
+  position: absolute;
+  top: 130px;
+  bottom: 10px;
+  left: 20px;
+  right: 0px;
 `
 
 const sampleItems = [
+  {
+    title: 'React',
+    to:    '/react',
+  },
+  {
+    title: 'React-native',
+    to:    '/react-native',
+  },
+  {
+    title: 'create-react-app',
+    to:    '/create-react-app',
+  },
+  {
+    title: 'jest',
+    to:    '/jest',
+  },
+  {
+    title: 'React',
+    to:    '/react',
+  },
+  {
+    title: 'React-native',
+    to:    '/react-native',
+  },
+  {
+    title: 'create-react-app',
+    to:    '/create-react-app',
+  },
+  {
+    title: 'jest',
+    to:    '/jest',
+  },
+  {
+    title: 'React',
+    to:    '/react',
+  },
+  {
+    title: 'React-native',
+    to:    '/react-native',
+  },
+  {
+    title: 'create-react-app',
+    to:    '/create-react-app',
+  },
+  {
+    title: 'jest',
+    to:    '/jest',
+  },
+  {
+    title: 'React',
+    to:    '/react',
+  },
+  {
+    title: 'React-native',
+    to:    '/react-native',
+  },
+  {
+    title: 'create-react-app',
+    to:    '/create-react-app',
+  },
+  {
+    title: 'jest',
+    to:    '/jest',
+  },
   {
     title: 'React',
     to:    '/react',
