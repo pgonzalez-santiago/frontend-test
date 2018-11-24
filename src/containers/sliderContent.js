@@ -1,15 +1,28 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
+
+// Styles
+import './styles/sliderContent.scss'
 
 // Slider content example
 const SliderContent = () => {
   return (
-    <div className="bm-item-list">
-      <a key="0" onClick={() => null}><span>Favorites</span></a>
-      <a key="1"><span>Alerts</span></a>
-      <a key="2"><span>Messages</span></a>
-      <a key="3"><span>Comments</span></a>
-      <a key="4"><span>Analytics</span></a>
-      <a key="5"><span>Reading List</span></a>
+    <div className="slider-content bm-item-list">
+      <NavLink activeStyle={{ fontWeight: 'bold' }} to="/react">
+        {'react'}
+      </NavLink>
+      <NavLink activeStyle={{ fontWeight: 'bold' }} to="/react-native">
+        {'react-native'}
+      </NavLink>
+      <NavLink activeStyle={{ fontWeight: 'bold' }} to="/create-react-app">
+        {'create-react-app'}
+      </NavLink>
+      <NavLink activeStyle={{ fontWeight: 'bold' }} to="/immutable-js">
+        {'immutable-js'}
+      </NavLink>
+      <NavLink activeStyle={{ fontWeight: 'bold' }} to="/jest">
+        {'jest'}
+      </NavLink>
     </div>
   )
 }

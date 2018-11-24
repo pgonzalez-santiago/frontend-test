@@ -1,0 +1,16 @@
+@import '../../index.scss';
+
+.slider-content {
+  &.bm-item-list a {
+    padding: 0.8em;
+    display: block;
+    outline: none;
+    text-decoration: none;
+    color: $primary-color;
+
+    span {
+      margin-left: 10px;
+      font-weight: 700;
+    }
+  }
+}
