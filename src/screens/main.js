@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 // Components
@@ -25,24 +25,47 @@ Content.propTypes = {
   repoName: PropTypes.string,
 }
 
-const MainScreen = ({ isMobile, match }) => {
-  const repoName = pathOr(null, ['params', 'repoName'], match)
+class MainScreen extends Component {
+  constructor (props) {
+    super(props)
 
-  return (
-    <div
-      className={'main-screen ' + (isMobile() ? '' : 'fixed')}
-      id="outer-container"
-      style={{ height: '100%' }}>
-      <Menu
-        isOpen
-        id={'push'}
-        pageWrapId={'page-wrap'}
-        outerContainerId={'outer-container'}>
-        <SliderContent />
-      </Menu>
-      <Content repoName={repoName} />
-    </div>
-  )
+    this.state = {
+      isOpen: true,
+    }
+  }
+
+  // Close menu when an item is clicked for mobile version
+  onSliderItemClick () {
+    const { isMobile } = this.props
+
+    if (isMobile()) {
+      this.setState({
+        isOpen: false,
+      })
+    }
+  }
+
+  render () {
+    const { isMobile, match } = this.props
+    const { isOpen } = this.state
+
+    const repoName = pathOr(null, ['params', 'repoName'], match)
+
+    return (
+      <div
+        className={'main-screen ' + (!isMobile() ? 'fixed' : '')}
+        id="outer-container">
+        <Menu
+          isOpen={isOpen}
+          id={'push'}
+          pageWrapId={'page-wrap'}
+          outerContainerId={'outer-container'}>
+          <SliderContent onItemClick={() => this.onSliderItemClick()}/>
+        </Menu>
+        <Content repoName={repoName} />
+      </div>
+    )
+  }
 }
 
 export default withGetScreen(MainScreen)
@@ -54,12 +77,4 @@ MainScreen.propTypes = {
       repoName: PropTypes.string,
     }).isRequired,
   }).isRequired,
-}
-
-MainScreen.defaultProps = {
-  match: {
-    params: {
-      repoName: null,
-    },
-  },
 }
