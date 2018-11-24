@@ -3,27 +3,15 @@ import PropTypes from 'prop-types'
 
 // Components
 import SliderContent from '../containers/sliderContent'
+import RepositoryDetail from '../containers/repositoryDetail'
 // Styles
 import './styles/mainScreen.scss'
 
-// Languages
-import I18n from '../assets/lang'
 // External dependencies
 import { push as Menu } from 'react-burger-menu'
 import { pathOr } from 'ramda'
 
 import { withGetScreen } from 'react-getscreen'
-
-const Content = ({ repoName }) => (
-  <div id="page-wrap" style={{ padding: 100 }}>
-    <p>{I18n.t('sampleText')}</p>
-    <p>{ repoName }</p>
-  </div>
-)
-
-Content.propTypes = {
-  repoName: PropTypes.string,
-}
 
 class MainScreen extends Component {
   constructor (props) {
@@ -62,7 +50,7 @@ class MainScreen extends Component {
           outerContainerId={'outer-container'}>
           <SliderContent onItemClick={() => this.onSliderItemClick()}/>
         </Menu>
-        <Content repoName={repoName} />
+        <RepositoryDetail repoName={repoName} />
       </div>
     )
   }
