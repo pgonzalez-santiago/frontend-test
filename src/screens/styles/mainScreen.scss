@@ -1,7 +1,13 @@
+@import '../../index.scss';
+
 .main-screen {
   //
   // Burger menu custom styles
   //
+  .bm-overlay {
+    display: none;
+  }
+
   .bm-burger-button {
     position: fixed;
     width: 36px;
@@ -16,24 +22,24 @@
   }
 
   .bm-burger-bars {
-    background: #373a47;
+    background: $background-color;
   }
 
   .bm-morph-shape {
-    fill: #373a47;
+    fill: $background-color;
   }
 
   .bm-menu {
-    background: #373a47;
+    background: $background-color;
     padding: 2.5em 1.5em 0;
     font-size: 1.15em;
 
     a {
-      color: #b8b7ad;
+      color: $primary-color;
 
       &:hover,
       &:focus {
-        color: #c94e50;
+        color: $secondary-color;
       }
     }
   }
@@ -52,7 +58,7 @@
   .bm-cross-button, .bm-burger-button {
 
     .bm-cross {
-      background-color: white;
+      background-color: $white;
     }
   }
 
