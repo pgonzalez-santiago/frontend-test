@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 // Styles
 import './styles/mainScreen.scss'
@@ -7,6 +8,7 @@ import './styles/mainScreen.scss'
 import I18n from '../assets/lang'
 // External dependencies
 import BurgerMenu from 'react-burger-menu'
+import { withGetScreen } from 'react-getscreen'
 
 const Content = () => (
   <div>
@@ -41,9 +43,9 @@ const getMenu = () => {
   )
 }
 
-const mainScreen = () => (
+const mainScreen = ({ isMobile }) => (
   <div
-    className="main-screen"
+    className={'main-screen ' + (isMobile() ? '' : 'fixed')}
     id="outer-container"
     style={{ height: '100%' }}>
     {getMenu()}
@@ -54,4 +56,8 @@ const mainScreen = () => (
   </div>
 )
 
-export default mainScreen
+export default withGetScreen(mainScreen)
+
+mainScreen.propTypes = {
+  isMobile: PropTypes.func,
+}

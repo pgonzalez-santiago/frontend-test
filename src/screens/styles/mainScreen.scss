@@ -4,8 +4,14 @@
   //
   // Burger menu custom styles
   //
-  .bm-overlay {
-    display: none;
+  &.fixed {
+    .bm-overlay {
+      display: none;
+    }
+
+    .bm-cross-button {
+      display: none;
+    }
   }
 
   .bm-burger-button {
