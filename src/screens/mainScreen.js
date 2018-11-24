@@ -28,13 +28,12 @@ const SliderContent = () => {
 }
 
 const getMenu = () => {
-  const Menu = BurgerMenu['slide']
+  const Menu = BurgerMenu['push']
 
   return (
     <Menu
       isOpen
-      // customBurgerIcon={false}
-      id={'slide'}
+      id={'push'}
       pageWrapId={'page-wrap'}
       outerContainerId={'outer-container'}>
       <SliderContent />
@@ -43,9 +42,12 @@ const getMenu = () => {
 }
 
 const mainScreen = () => (
-  <div className="main-screen" style={{ height: '100%' }}>
+  <div
+    className="main-screen"
+    id="outer-container"
+    style={{ height: '100%' }}>
     {getMenu()}
-    <div style={{ padding: 100 }}>
+    <div id="page-wrap" style={{ padding: 100 }}>
       <Content />
     </div>
 
