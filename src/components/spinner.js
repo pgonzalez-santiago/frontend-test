@@ -21,5 +21,5 @@ export default Spinner
 Spinner.propTypes = {
   color: PropTypes.string.isRequired,
   size:  PropTypes.number.isRequired,
-  style: PropTypes.string.isRequired,
+  style: PropTypes.string,
 }

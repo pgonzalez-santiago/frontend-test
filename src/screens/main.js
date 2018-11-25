@@ -16,7 +16,6 @@ import Colors from '../assets/colors'
 import styled from 'styled-components'
 
 // External dependencies
-import { css } from 'react-emotion'
 import { push as Menu } from 'react-burger-menu'
 import { withGetScreen } from 'react-getscreen'
 import I18n from 'i18n-js'
@@ -34,11 +33,6 @@ const Wrapper = styled.div`
   align-items: center;
   padding: 100px 30px;
   text-align: center;
-`
-
-const style = css`
-    margin: 0 auto;
-    border-color: red;
 `
 
 class MainScreen extends Component {
@@ -77,8 +71,7 @@ class MainScreen extends Component {
           <Title>{I18n.t('loggingIn')}</Title>
           <Spinner
             color={Colors.primaryColor}
-            size={50}
-            style={style}/>
+            size={50}/>
         </Wrapper>
       )
     }
