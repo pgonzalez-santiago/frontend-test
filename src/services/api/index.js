@@ -1,5 +1,6 @@
 import { create } from 'apisauce'
 import base64 from 'base-64'
+import store from '../../store'
 
 const config = {
   GITHUB_CLIENT_ID:     '39fa981bd22c370919af',
@@ -34,6 +35,21 @@ const authBody = JSON.stringify({
 const githubLogin = (name, pwd) =>
   api.post('/authorizations', authBody, setAuthHeaders(name, pwd))
 
+const setHeaders = () => {
+  const token = store.getState().login.token
+
+  const headers = {
+    'Authorization': `Bearer ${token}`,
+    'Content-Type':  'application/json',
+  }
+
+  return { headers }
+}
+
+const graphqlRequest = (query) =>
+  api.post('/graphql', { query }, setHeaders())
+
 export default {
   githubLogin,
+  graphqlRequest,
 }

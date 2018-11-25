@@ -5,8 +5,8 @@ import { concat } from 'ramda'
 // Create Types and Creators
 const { Types, Creators } = createActions({
   failure: ['error'],
-  request: null,
-  success: ['repositories'],
+  request: ['page', 'limit', 'query'],
+  success: ['payload'],
 }, { prefix: 'REPOSITORIES_' })
 
 export const repositoriesTypes = Types
@@ -14,9 +14,13 @@ export default Creators
 
 // the initial state of this reducer
 export const INITIAL_STATE = {
-  error:    false,
-  fetching: false,
-  list:     [],
+  error:      false,
+  fetching:   false,
+  list:       [],
+  pagination: {
+    endCursor:   null,
+    hasNextPage: false,
+  },
 }
 
 // Request
@@ -29,12 +33,15 @@ export const request = (state = INITIAL_STATE, action) => {
 }
 
 // Success
-export const success = (state = INITIAL_STATE, { repositories }) => {
+export const success = (state = INITIAL_STATE, { payload }) => {
+  const { repositories, pagination } = payload
+
   return {
     ...state,
     fetching: false,
     error:    false,
     list:     concat(state.list, repositories),
+    pagination,
   }
 }
 

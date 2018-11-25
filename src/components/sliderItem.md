@@ -4,7 +4,7 @@
 ## Props
 
 * **onClick**        function: Callback function called when item is clicked.
-* **title**              string
+* **name**              string
 * **to**                 string: Route link
 
 
@@ -14,7 +14,7 @@
 ```html
   <SliderItem
     onClick={() => null}
-    title={'React'}
+    name={'React'}
     to={'/react'}
   />
 ```

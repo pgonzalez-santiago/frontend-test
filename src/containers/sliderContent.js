@@ -37,7 +37,9 @@ class SliderContent extends Component {
   componentDidMount () {
     const { getRepositories } = this.props
 
-    getRepositories()
+    /* NOTE: sort by stars because it seems like it is not possible to sort by watchers.
+    (https://developer.github.com/v4/enum/repositoryorderfield/) */
+    getRepositories(1, 10, '"user:facebook sort:stars-desc"')
   }
 
   render () {
@@ -62,7 +64,7 @@ class SliderContent extends Component {
               <SliderItem
                 key={index}
                 onClick={onItemClick}
-                title={item.title}
+                name={item.name}
                 to={item.to}
               />
             )
@@ -75,20 +77,27 @@ class SliderContent extends Component {
 
 const mapStateToProps = (state, ownProps) => {
   return {
+    fetching:     state.repositories.fetching,
+    pagination:   state.repositories.pagination,
     repositories: state.repositories.list,
   }
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    getRepositories: () => dispatch(RepositoririesActions.request()),
+    getRepositories: (page, limit, query) => dispatch(RepositoririesActions.request(page, limit, query)),
   }
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(SliderContent)
 
 SliderContent.propTypes = {
+  fetching:        PropTypes.bool.isRequired,
   getRepositories: PropTypes.func.isRequired,
   onItemClick:     PropTypes.func.isRequired,
-  repositories:    PropTypes.array.isRequired,
+  pagination:      PropTypes.shape({
+    endCursor:   PropTypes.string,
+    hasNextPage: PropTypes.bool.isRequired,
+  }),
+  repositories: PropTypes.array.isRequired,
 }
