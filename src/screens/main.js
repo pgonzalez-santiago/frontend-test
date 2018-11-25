@@ -5,18 +5,40 @@ import { connect } from 'react-redux'
 // Components
 import SliderContent from '../containers/sliderContent'
 import RepositoryDetail from '../containers/repositoryDetail'
+import Spinner from '../components/spinner'
 // Redux
 import GithubLoginActions from '../store/reducers/githubLogin'
 // Config
 import { username, password } from '../config'
 // Styles
 import './styles/mainScreen.scss'
+import Colors from '../assets/colors'
+import styled from 'styled-components'
 
 // External dependencies
+import { css } from 'react-emotion'
 import { push as Menu } from 'react-burger-menu'
+import { withGetScreen } from 'react-getscreen'
+import I18n from 'i18n-js'
+
 import { pathOr } from 'ramda'
 
-import { withGetScreen } from 'react-getscreen'
+const Title = styled.span`
+  color: ${Colors.primaryColor};
+  padding-bottom: 10px;
+`
+
+const LoginSpinnerWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+`
+
+const style = css`
+    margin: 0 auto;
+    border-color: red;
+`
 
 class MainScreen extends Component {
   constructor (props) {
@@ -49,7 +71,15 @@ class MainScreen extends Component {
     const { isOpen } = this.state
 
     if (fetching) {
-      return <span> Fetching login </span>
+      return (
+        <LoginSpinnerWrapper>
+          <Title>{I18n.t('loggingIn')}</Title>
+          <Spinner
+            color={Colors.primaryColor}
+            size={50}
+            style={style}/>
+        </LoginSpinnerWrapper>
+      )
     }
 
     if (!token) {
