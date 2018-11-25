@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import { connect } from 'react-redux'
 
 // Components
 import GithubLogo from '../components/githubLogo'
@@ -7,6 +8,9 @@ import SliderItem from '../components/sliderItem'
 
 // External dependencies
 import styled from 'styled-components'
+
+// Redux
+import RepositoririesActions from '../store/redux/repositories'
 
 // Styles
 import './styles/sliderContent.scss'
@@ -28,122 +32,63 @@ const SliderList = styled.div`
   right: 0px;
 `
 
-const sampleItems = [
-  {
-    title: 'React',
-    to:    '/react',
-  },
-  {
-    title: 'React-native',
-    to:    '/react-native',
-  },
-  {
-    title: 'create-react-app',
-    to:    '/create-react-app',
-  },
-  {
-    title: 'jest',
-    to:    '/jest',
-  },
-  {
-    title: 'React',
-    to:    '/react',
-  },
-  {
-    title: 'React-native',
-    to:    '/react-native',
-  },
-  {
-    title: 'create-react-app',
-    to:    '/create-react-app',
-  },
-  {
-    title: 'jest',
-    to:    '/jest',
-  },
-  {
-    title: 'React',
-    to:    '/react',
-  },
-  {
-    title: 'React-native',
-    to:    '/react-native',
-  },
-  {
-    title: 'create-react-app',
-    to:    '/create-react-app',
-  },
-  {
-    title: 'jest',
-    to:    '/jest',
-  },
-  {
-    title: 'React',
-    to:    '/react',
-  },
-  {
-    title: 'React-native',
-    to:    '/react-native',
-  },
-  {
-    title: 'create-react-app',
-    to:    '/create-react-app',
-  },
-  {
-    title: 'jest',
-    to:    '/jest',
-  },
-  {
-    title: 'React',
-    to:    '/react',
-  },
-  {
-    title: 'React-native',
-    to:    '/react-native',
-  },
-  {
-    title: 'create-react-app',
-    to:    '/create-react-app',
-  },
-  {
-    title: 'jest',
-    to:    '/jest',
-  },
-]
-
 // Slider content example
-const SliderContent = ({ onItemClick }) => {
-  return (
-    <div className="slider-content bm-item-list">
-      <Logo>
-        <GithubLogo
-          width={40}
-          height={40}
-          style={{
-            color:   colors.primaryColor,
-            display: 'block',
-            fill:    'currentColor',
-            margin:  '0 auto',
-          }}/>
-      </Logo>
-      <SliderList>
-        {sampleItems.map(function (item, index) {
-          return (
-            <SliderItem
-              key={index}
-              onClick={onItemClick}
-              title={item.title}
-              to={item.to}
-            />
-          )
-        })}
-      </SliderList>
-    </div>
-  )
+class SliderContent extends Component {
+  componentDidMount () {
+    const { getRepositories } = this.props
+
+    getRepositories()
+  }
+
+  render () {
+    const { onItemClick, repositories } = this.props
+
+    return (
+      <div className="slider-content bm-item-list">
+        <Logo>
+          <GithubLogo
+            width={40}
+            height={40}
+            style={{
+              color:   colors.primaryColor,
+              display: 'block',
+              fill:    'currentColor',
+              margin:  '0 auto',
+            }}/>
+        </Logo>
+        <SliderList>
+          {repositories.map(function (item, index) {
+            return (
+              <SliderItem
+                key={index}
+                onClick={onItemClick}
+                title={item.title}
+                to={item.to}
+              />
+            )
+          })}
+        </SliderList>
+      </div>
+    )
+  }
 }
 
-export default SliderContent
+const mapStateToProps = (state, ownProps) => {
+  return {
+    repositories: state.repositories.list,
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    getRepositories: () => dispatch(RepositoririesActions.request()),
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(SliderContent)
 
 SliderContent.propTypes = {
-  onItemClick: PropTypes.func.isRequired,
+  getRepositories: PropTypes.func.isRequired,
+  onItemClick:     PropTypes.func.isRequired,
+  repositories:    PropTypes.array.isRequired,
 }
