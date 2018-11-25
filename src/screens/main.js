@@ -28,11 +28,12 @@ const Title = styled.span`
   padding-bottom: 10px;
 `
 
-const LoginSpinnerWrapper = styled.div`
+const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 100px;
+  padding: 100px 30px;
+  text-align: center;
 `
 
 const style = css`
@@ -72,22 +73,21 @@ class MainScreen extends Component {
 
     if (fetching) {
       return (
-        <LoginSpinnerWrapper>
+        <Wrapper>
           <Title>{I18n.t('loggingIn')}</Title>
           <Spinner
             color={Colors.primaryColor}
             size={50}
             style={style}/>
-        </LoginSpinnerWrapper>
+        </Wrapper>
       )
     }
 
     if (!token) {
       return (
-        <div>
-          <span> You should be logged to view the application </span>
-          <p> Please insert correct data in the config file (/src/config)</p>
-        </div>
+        <Wrapper>
+          <Title>{I18n.t('wrongLoginData')}</Title>
+        </Wrapper>
       )
     }
 
