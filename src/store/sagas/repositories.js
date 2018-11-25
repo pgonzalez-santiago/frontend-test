@@ -4,9 +4,11 @@ import api from '../../services/api'
 import RepositoririesActions from '../reducers/repositories'
 import { path, prop, map, pipe } from 'ramda'
 
-export const getRepositories = function * getRepositories ({ page = 1, limit = 10, query }) {
+export const getRepositories = function * getRepositories ({ cursor, limit = 10, query }) {
+  const after = cursor ? `"${cursor}"` : null
+
   const reposQuery = `{
-    search(first: ${limit}, type: REPOSITORY, query: ${query}) {
+    search(first: ${limit} after: ${after}, type: REPOSITORY, query: ${query}) {
       edges {
         node {
           ... on Repository {

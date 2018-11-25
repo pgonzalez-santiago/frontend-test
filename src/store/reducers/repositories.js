@@ -5,7 +5,7 @@ import { concat } from 'ramda'
 // Create Types and Creators
 const { Types, Creators } = createActions({
   failure: ['error'],
-  request: ['page', 'limit', 'query'],
+  request: ['cursor', 'limit', 'query'],
   success: ['payload'],
 }, { prefix: 'REPOSITORIES_' })
 
@@ -19,7 +19,7 @@ export const INITIAL_STATE = {
   list:       [],
   pagination: {
     endCursor:   null,
-    hasNextPage: false,
+    hasNextPage: true,
   },
 }
 
