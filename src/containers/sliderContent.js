@@ -101,6 +101,8 @@ class SliderContent extends Component {
                   key={index}
                   onClick={onItemClick}
                   name={item.name}
+                  stars={item.stars}
+                  watchers={item.watchers}
                   to={item.to}
                 />
               )
