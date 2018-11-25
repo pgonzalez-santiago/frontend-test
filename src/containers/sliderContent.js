@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
@@ -31,7 +31,7 @@ const ScrollContainer = styled.div`
 `
 
 // Slider content example
-class SliderContent extends Component {
+class SliderContent extends PureComponent {
   componentDidMount () {
     this.getRepos()
   }
