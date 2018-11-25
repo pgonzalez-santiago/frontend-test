@@ -10,7 +10,7 @@ import SliderItem from '../components/sliderItem'
 import styled from 'styled-components'
 
 // Redux
-import RepositoririesActions from '../store/redux/repositories'
+import RepositoririesActions from '../store/reducers/repositories'
 
 // Styles
 import './styles/sliderContent.scss'

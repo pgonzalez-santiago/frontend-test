@@ -1,39 +1,22 @@
 import { createActions, createReducer } from 'reduxsauce'
 
+import { concat } from 'ramda'
+
 // Create Types and Creators
 const { Types, Creators } = createActions({
   failure: ['error'],
   request: null,
-  success: ['username'],
+  success: ['repositories'],
 }, { prefix: 'REPOSITORIES_' })
 
 export const repositoriesTypes = Types
 export default Creators
 
-const sampleRepositories = [
-  {
-    title: 'React',
-    to:    '/react',
-  },
-  {
-    title: 'React-native',
-    to:    '/react-native',
-  },
-  {
-    title: 'create-react-app',
-    to:    '/create-react-app',
-  },
-  {
-    title: 'jest',
-    to:    '/jest',
-  },
-]
-
 // the initial state of this reducer
 export const INITIAL_STATE = {
   error:    false,
   fetching: false,
-  list:     sampleRepositories, // TODO: remove sample and set initial value: []
+  list:     [],
 }
 
 // Request
@@ -46,12 +29,12 @@ export const request = (state = INITIAL_STATE, action) => {
 }
 
 // Success
-export const success = (state = INITIAL_STATE, action) => {
+export const success = (state = INITIAL_STATE, { repositories }) => {
   return {
     ...state,
     fetching: false,
     error:    false,
-    list:     [],
+    list:     concat(state.list, repositories),
   }
 }
 
