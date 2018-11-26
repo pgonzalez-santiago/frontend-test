@@ -2,7 +2,7 @@ import { call, put } from 'redux-saga/effects'
 import api from '../../services/api'
 
 import RepositoririesActions from '../reducers/repositories'
-import { path, prop, map, pipe } from 'ramda'
+import { path, pathOr, prop, map, pipe } from 'ramda'
 
 export const getRepositories = function * getRepositories ({ cursor, limit = 10, query }) {
   const after = cursor ? `"${cursor}"` : null
@@ -31,24 +31,31 @@ export const getRepositories = function * getRepositories ({ cursor, limit = 10,
   }`
 
   const response = yield call(api.graphqlRequest, reposQuery)
-  const data = path(['data', 'data', 'search'], response)
+  const error = pathOr(false, ['data', 'errors'], response)
 
-  // Transform request data
-  const transform = pipe(
-    prop('node'),
-    x => ({
-      name:     x.name,
-      stars:    x.stargazers.totalCount,
-      to:       `/${x.name}`,
-      watchers: x.watchers.totalCount,
-    })
-  )
+  if (response.ok && !error) {
+    const data = path(['data', 'data', 'search'], response)
 
-  const repos = map(transform, data.edges)
+    // Transform request data
+    const transform = pipe(
+      prop('node'),
+      x => ({
+        name:     x.name,
+        stars:    x.stargazers.totalCount,
+        to:       `/${x.name}`,
+        watchers: x.watchers.totalCount,
+      })
+    )
 
-  // Get pagination info
-  const pagination = data.pageInfo
+    const repos = map(transform, data.edges)
 
-  // call repositories success action
-  yield put(RepositoririesActions.success({ pagination, repositories: repos }))
+    // Get pagination info
+    const pagination = data.pageInfo
+
+    // call repositories success action
+    yield put(RepositoririesActions.success({ pagination, repositories: repos }))
+  } else {
+    // call repositories failure action
+    yield put(RepositoririesActions.failure())
+  }
 }

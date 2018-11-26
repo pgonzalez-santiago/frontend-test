@@ -2,17 +2,15 @@ import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
+// Redux
+import RepositoririesActions from '../store/reducers/repositories'
+
 // Components
 import GithubLogo from '../components/githubLogo'
-import SliderItem from '../components/sliderItem'
-import Spinner from '../components/spinner'
+import SliderList from '../components/sliderList'
 
 // External dependencies
 import styled from 'styled-components'
-import InfiniteScroll from 'react-infinite-scroll-component'
-
-// Redux
-import RepositoririesActions from '../store/reducers/repositories'
 
 // Styles
 import './styles/sliderContent.scss'
@@ -22,12 +20,6 @@ const Logo = styled.div`
   padding-top: 10px;
   padding-bottom: 20px;
   border-bottom: 1px solid ${Colors.primaryColor};
-`
-
-const ScrollContainer = styled.div`
-  height: ${window.innerHeight - 150}px;
-  overflow: auto;
-  padding-top: 10px;
 `
 
 // Slider content example
@@ -48,32 +40,14 @@ class SliderContent extends PureComponent {
     }
   }
 
-  getSpinner () {
-    const { fetching } = this.props
-
-    const Wrapper = styled.div`
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-top: 50px;
-      text-align: center;
-    `
-
-    if (fetching) {
-      return (
-        <Wrapper>
-          <Spinner
-            color={Colors.primaryColor}
-            size={35}/>
-        </Wrapper>
-      )
-    }
-
-    return null
-  }
-
   render () {
-    const { onItemClick, repositories, pagination } = this.props
+    const {
+      fetching,
+      error,
+      onItemClick,
+      pagination,
+      repositories,
+    } = this.props
 
     return (
       <div className="slider-content bm-item-list">
@@ -88,27 +62,14 @@ class SliderContent extends PureComponent {
               margin:  '0 auto',
             }}/>
         </Logo>
-        <ScrollContainer id="slider-scroll-container">
-          <InfiniteScroll
-            scrollableTarget={'slider-scroll-container'}
-            dataLength={repositories.length}
-            next={() => this.getRepos(pagination.endCursor)}
-            hasMore={pagination.hasNextPage}
-            loader={this.getSpinner()}>
-            {repositories.map(function (item, index) {
-              return (
-                <SliderItem
-                  key={index}
-                  onClick={onItemClick}
-                  name={item.name}
-                  stars={item.stars}
-                  watchers={item.watchers}
-                  to={item.to}
-                />
-              )
-            })}
-          </InfiniteScroll>
-        </ScrollContainer>
+        <SliderList
+          fetching={fetching}
+          error={error}
+          onItemClick={onItemClick}
+          loadMore={(cursor) => this.getRepos(cursor)}
+          pagination={pagination}
+          repositories={repositories}
+        />
       </div>
     )
   }
@@ -116,6 +77,7 @@ class SliderContent extends PureComponent {
 
 const mapStateToProps = (state, ownProps) => {
   return {
+    error:        state.repositories.error,
     fetching:     state.repositories.fetching,
     pagination:   state.repositories.pagination,
     repositories: state.repositories.list,
@@ -131,6 +93,7 @@ const mapDispatchToProps = (dispatch) => {
 export default connect(mapStateToProps, mapDispatchToProps)(SliderContent)
 
 SliderContent.propTypes = {
+  error:           PropTypes.bool.isRequired,
   fetching:        PropTypes.bool.isRequired,
   getRepositories: PropTypes.func.isRequired,
   onItemClick:     PropTypes.func.isRequired,

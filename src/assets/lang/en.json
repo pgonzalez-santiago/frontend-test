@@ -3,5 +3,6 @@
   "loggingIn": "Logging in...",
   "wrongLoginData": "Please insert in config.js file your username and password.",
   "stars": "Stars",
-  "watchers": "Watchers"
+  "watchers": "Watchers",
+  "errorMessage": "Ups something went wrong!!"
 }
