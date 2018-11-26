@@ -1,8 +1,17 @@
 {
-  "sampleText": "Sample Text",
+  "detailTitle": "Repository details",
   "loggingIn": "Logging in...",
   "wrongLoginData": "Please insert in config.js file your username and password.",
   "stars": "Stars",
   "watchers": "Watchers",
-  "errorMessage": "Ups something went wrong!!"
+  "errorMessage": "Ups something went wrong!!",
+  "selectRepo": "Please select a repository",
+  "Name": "Name: ",
+  "Description": "Description: ",
+  "Forks": "Forks: ",
+  "Issues":"Issues: ",
+  "Pull requests":"Pull requests: ",
+  "Release":"Release: ",
+  "Stars":"Stars: ",
+  "Watchers":"Watchers: "
 }
