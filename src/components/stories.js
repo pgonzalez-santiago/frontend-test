@@ -12,6 +12,8 @@ import SliderList from './sliderList'
 import SliderListSpinner from './sliderListSpinner'
 import Spinner from './spinner'
 
+import '../containers/styles/sliderContent.scss'
+import Colors from '../assets/colors'
 import '../assets/lang'
 
 const repositoriesExample = [
@@ -36,7 +38,7 @@ const repositoriesExample = [
 ]
 
 // Components
-storiesOf('Components')
+storiesOf('Components', module)
   .addDecorator(story => (
     <MemoryRouter initialEntries={['/']}>{story()}</MemoryRouter>
   ))
@@ -62,26 +64,30 @@ storiesOf('Components')
     />
   ))
   .add('Slider Item', () => (
-    <SliderItem
-      onClick={() => null}
-      name={'React'}
-      to={'/react'}
-      stars={1523}
-      watchers={786}
-    />
+    <div className="slider-content bm-item-list" style={{ background: Colors.backgroundColor }}>
+      <SliderItem
+        onClick={() => null}
+        name={'React'}
+        to={'/react'}
+        stars={1523}
+        watchers={786}
+      />
+    </div>
   ))
   .add('Slider List', () => (
-    <SliderList
-      fetching={false}
-      error={false}
-      onItemClick={() => null}
-      loadMore={() => null}
-      pagination={{
-        endCursor:   'xxx',
-        hasNextPage: true,
-      }}
-      repositories={repositoriesExample}
-    />
+    <div className="slider-content bm-item-list" style={{ background: Colors.backgroundColor }}>
+      <SliderList
+        fetching={false}
+        error={false}
+        onItemClick={() => null}
+        loadMore={() => null}
+        pagination={{
+          endCursor:   'xxx',
+          hasNextPage: true,
+        }}
+        repositories={repositoriesExample}
+      />
+    </div>
   ))
   .add('Slider List Spinner', () => (
     <SliderListSpinner fetching={true} />
@@ -90,5 +96,5 @@ storiesOf('Components')
     <Spinner
       color="#c94e50"
       size={50}
-      style={{}}/>
+      style={''}/>
   ))
