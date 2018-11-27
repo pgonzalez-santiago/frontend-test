@@ -23,13 +23,18 @@ const Wrapper = styled.div`
   left: 0;
   right: 0;
   padding: 30px;
+  padding-top: 0;
   color: ${Colors.backgroundColor};
 `
 
 const Container = styled.div`
-  position: absolute;
-  height: 100%;
   width: ${(props) => props.isMobile ? 'auto' : '70%'};
+  overflow: auto;
+  position: absolute;
+  top: ${(props) => props.isMobile ? '80px' : 0};;
+  right: 0;
+  left: 0;
+  bottom: 0;
 `
 
 const Title = styled.h1`

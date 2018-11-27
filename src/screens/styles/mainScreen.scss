@@ -4,6 +4,14 @@
   //
   // Burger menu custom styles
   //
+
+   height: 100%;
+
+    > :first-child {
+     height: 80px;
+     background: $white;
+   }
+
   &.fixed {
     .bm-overlay {
       display: none;
