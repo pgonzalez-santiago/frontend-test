@@ -94,7 +94,7 @@ class ContributorsList extends PureComponent {
     return (
       <Fragment>
         <Title>
-        Contributors list
+          {I18n.t('contributorsList')}
         </Title>
         {this.renderContent()}
       </Fragment>
