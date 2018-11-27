@@ -42,6 +42,7 @@ class ContributorsList extends PureComponent {
     const { getContributors, repoName } = this.props
 
     if (repoName) {
+      // Get contributors when component is mounted
       getContributors('facebook', repoName)
     }
   }
@@ -49,7 +50,7 @@ class ContributorsList extends PureComponent {
   componentDidUpdate (prevProps) {
     const { getContributors, repoName } = this.props
 
-    // If repository changes
+    // If repository changes get the new contributors
     if (repoName !== prevProps.repoName) {
       getContributors('facebook', repoName)
     }
@@ -58,6 +59,7 @@ class ContributorsList extends PureComponent {
   renderContent () {
     const { contributors, error, fetching } = this.props
 
+    // If something goes wrong in the request render a message
     if (error) {
       return (
         <MessageWrapper>
@@ -66,6 +68,7 @@ class ContributorsList extends PureComponent {
       )
     }
 
+    // Render a spinner while contributors data is being fetched
     if (fetching) {
       return (
         <MessageWrapper>
@@ -76,6 +79,7 @@ class ContributorsList extends PureComponent {
       )
     }
 
+    // Render contributors
     return (
       <ListWrapper>
         {contributors.map((item, index) => {

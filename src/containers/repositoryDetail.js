@@ -65,6 +65,7 @@ class RepositoryDetail extends PureComponent {
     const { getDetail, repoName } = this.props
 
     if (repoName) {
+      // Get repository detailed data when component is mounted
       getDetail(`owner: "facebook", name: "${repoName}"`)
     }
   }
@@ -72,7 +73,7 @@ class RepositoryDetail extends PureComponent {
   componentDidUpdate (prevProps) {
     const { getDetail, repoName } = this.props
 
-    // If repository changes
+    // If repository changes get the new repository detailed data
     if (repoName !== prevProps.repoName) {
       getDetail(`owner: "facebook", name: "${repoName}"`)
     }
@@ -81,6 +82,7 @@ class RepositoryDetail extends PureComponent {
   renderContent () {
     const { detail, error, fetching, isMobile, repoName } = this.props
 
+    // If something goes wrong in the request render a message
     if (error) {
       return (
         <MessageWrapper isMobile={isMobile()}>
@@ -89,6 +91,7 @@ class RepositoryDetail extends PureComponent {
       )
     }
 
+    // Render a spinner while repository detail data is being fetched
     if (fetching) {
       return (
         <MessageWrapper isMobile={isMobile()}>
@@ -99,6 +102,7 @@ class RepositoryDetail extends PureComponent {
       )
     }
 
+    // If a repo is selected render the data
     if (detail) {
       return (
         <Wrapper>
@@ -120,6 +124,7 @@ class RepositoryDetail extends PureComponent {
       )
     }
 
+    // IF there is no repository selected display a message to select a repository
     return (
       <MessageWrapper isMobile={isMobile()}>
         <span>{I18n.t('selectRepo')}</span>

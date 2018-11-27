@@ -40,13 +40,14 @@ class MainScreen extends Component {
     super(props)
 
     this.state = {
-      isOpen: true,
+      isOpen: true, // Slider will be open by default.
     }
   }
 
   componentDidMount () {
     const { login } = this.props
 
+    // Log user on start
     login(username, password)
   }
 
@@ -65,6 +66,7 @@ class MainScreen extends Component {
     const { isMobile, match, token, fetching } = this.props
     const { isOpen } = this.state
 
+    // Render spinner while logging in.
     if (fetching) {
       return (
         <Wrapper>
@@ -76,6 +78,7 @@ class MainScreen extends Component {
       )
     }
 
+    // Render message if the user is not logged.
     if (!token) {
       return (
         <Wrapper>
@@ -84,8 +87,10 @@ class MainScreen extends Component {
       )
     }
 
+    // Get repository name from the path params
     const repoName = pathOr(null, ['params', 'repoName'], match)
 
+    // Return main screen (menu + detail)
     return (
       <div
         className={'main-screen ' + (!isMobile() ? 'fixed' : '')}

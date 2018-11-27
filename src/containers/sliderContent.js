@@ -25,11 +25,12 @@ const Logo = styled.div`
 // Slider content example
 class SliderContent extends PureComponent {
   componentDidMount () {
+    // Get repositories when component is mounted
     this.getRepos()
   }
 
   getRepos (cursor) {
-    const limit = 20
+    const limit = 20 // Set limit for the repositories pagination
 
     const { getRepositories, pagination } = this.props
 
