@@ -6,9 +6,15 @@ import { connect } from 'react-redux'
 // Redux
 import RepositoryContributorsActions from '../store/reducers/repositoryContributors'
 
+// Components
+import Spinner from '../components/spinner'
+
 // External dependencies
 import styled from 'styled-components'
 import Colors from '../assets/colors'
+
+// Languages
+import I18n from '../assets/lang'
 
 const Title = styled.div`
   border-bottom: 1px solid ${Colors.primaryColor};
@@ -18,6 +24,16 @@ const Title = styled.div`
 
 const ListWrapper = styled.div`
   padding-top: 20px;
+`
+
+const MessageWrapper = styled.div`
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  color: ${Colors.primaryColor};
+  text-transform: uppercase;
+  padding: 20px;
 `
 
 class ContributorsList extends PureComponent {
@@ -42,11 +58,21 @@ class ContributorsList extends PureComponent {
     const { contributors, error, fetching } = this.props
 
     if (error) {
-      return <div>Error</div>
+      return (
+        <MessageWrapper>
+          <span>{I18n.t('errorMessage')}</span>
+        </MessageWrapper>
+      )
     }
 
     if (fetching) {
-      return <div>Fecthing</div>
+      return (
+        <MessageWrapper>
+          <Spinner
+            color={Colors.primaryColor}
+            size={30}/>
+        </MessageWrapper>
+      )
     }
 
     return (

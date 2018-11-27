@@ -31,7 +31,7 @@ const Container = styled.div`
   width: ${(props) => props.isMobile ? 'auto' : '70%'};
   overflow: auto;
   position: absolute;
-  top: ${(props) => props.isMobile ? '80px' : 0};;
+  top: ${(props) => props.isMobile ? '80px' : 0};
   right: 0;
   left: 0;
   bottom: 0;
