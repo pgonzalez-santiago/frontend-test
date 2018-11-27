@@ -49,7 +49,13 @@ const setHeaders = () => {
 const graphqlRequest = (query) =>
   api.post('/graphql', { query }, setHeaders())
 
+// NOTE: I needed to user version 3 of the github API because contributors
+// are not available in the latest version. https://platform.github.community/t/contributors-of-a-repository/3680/10
+const getRepoContributors = (owner, repoName) =>
+  api.get(`repos/${owner}/${repoName}/contributors`)
+
 export default {
+  getRepoContributors,
   githubLogin,
   graphqlRequest,
 }

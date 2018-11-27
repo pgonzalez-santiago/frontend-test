@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
 // Redux
+import RepositoryContributorsActions from '../store/reducers/repositoryContributors'
 import RepositoryDetailActions from '../store/reducers/repositoryDetail'
 // Components
 import Spinner from '../components/spinner'
@@ -55,19 +56,21 @@ const MessageWrapper = styled.div`
 
 class RepositoryDetail extends PureComponent {
   componentDidMount () {
-    const { getDetail, repoName } = this.props
+    const { getContributors, getDetail, repoName } = this.props
 
     if (repoName) {
       getDetail(`owner: "facebook", name: "${repoName}"`)
+      getContributors('facebook', repoName)
     }
   }
 
   componentDidUpdate (prevProps) {
-    const { getDetail, repoName } = this.props
+    const { getContributors, getDetail, repoName } = this.props
 
     // If repository changes
     if (repoName !== prevProps.repoName) {
       getDetail(`owner: "facebook", name: "${repoName}"`)
+      getContributors('facebook', repoName)
     }
   }
 
@@ -141,7 +144,8 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    getDetail: (query) => dispatch(RepositoryDetailActions.request(query)),
+    getContributors: (repoName, owner) => dispatch(RepositoryContributorsActions.request(repoName, owner)),
+    getDetail:       (query) => dispatch(RepositoryDetailActions.request(query)),
   }
 }
 
@@ -160,9 +164,10 @@ RepositoryDetail.propTypes = {
     stars:        PropTypes.number.isRequired,
     watchers:     PropTypes.number.isRequired,
   }),
-  error:     PropTypes.bool.isRequired,
-  fetching:  PropTypes.bool.isRequired,
-  getDetail: PropTypes.func.isRequired,
-  isMobile:  PropTypes.func.isRequired,
-  repoName:  PropTypes.string,
+  error:           PropTypes.bool.isRequired,
+  fetching:        PropTypes.bool.isRequired,
+  getContributors: PropTypes.func.isRequired,
+  getDetail:       PropTypes.func.isRequired,
+  isMobile:        PropTypes.func.isRequired,
+  repoName:        PropTypes.string,
 }
