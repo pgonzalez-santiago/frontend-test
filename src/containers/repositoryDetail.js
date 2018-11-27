@@ -3,8 +3,9 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
 // Redux
-import RepositoryContributorsActions from '../store/reducers/repositoryContributors'
 import RepositoryDetailActions from '../store/reducers/repositoryDetail'
+// Conatiners
+import ContributorsList from './contributorsList'
 // Components
 import Spinner from '../components/spinner'
 
@@ -56,26 +57,24 @@ const MessageWrapper = styled.div`
 
 class RepositoryDetail extends PureComponent {
   componentDidMount () {
-    const { getContributors, getDetail, repoName } = this.props
+    const { getDetail, repoName } = this.props
 
     if (repoName) {
       getDetail(`owner: "facebook", name: "${repoName}"`)
-      getContributors('facebook', repoName)
     }
   }
 
   componentDidUpdate (prevProps) {
-    const { getContributors, getDetail, repoName } = this.props
+    const { getDetail, repoName } = this.props
 
     // If repository changes
     if (repoName !== prevProps.repoName) {
       getDetail(`owner: "facebook", name: "${repoName}"`)
-      getContributors('facebook', repoName)
     }
   }
 
   renderContent () {
-    const { detail, error, fetching, isMobile } = this.props
+    const { detail, error, fetching, isMobile, repoName } = this.props
 
     if (error) {
       return (
@@ -96,7 +95,6 @@ class RepositoryDetail extends PureComponent {
     }
 
     if (detail) {
-      // TODO List contributors
       return (
         <Wrapper>
           <Title>
@@ -112,6 +110,7 @@ class RepositoryDetail extends PureComponent {
             <p>{I18n.t('Stars')}{detail.stars}</p>
             <p>{I18n.t('Watchers')}{detail.watchers}</p>
           </Detail>
+          <ContributorsList repoName={repoName}/>
         </Wrapper>
       )
     }
@@ -144,8 +143,7 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    getContributors: (repoName, owner) => dispatch(RepositoryContributorsActions.request(repoName, owner)),
-    getDetail:       (query) => dispatch(RepositoryDetailActions.request(query)),
+    getDetail: (query) => dispatch(RepositoryDetailActions.request(query)),
   }
 }
 
@@ -164,10 +162,9 @@ RepositoryDetail.propTypes = {
     stars:        PropTypes.number.isRequired,
     watchers:     PropTypes.number.isRequired,
   }),
-  error:           PropTypes.bool.isRequired,
-  fetching:        PropTypes.bool.isRequired,
-  getContributors: PropTypes.func.isRequired,
-  getDetail:       PropTypes.func.isRequired,
-  isMobile:        PropTypes.func.isRequired,
-  repoName:        PropTypes.string,
+  error:     PropTypes.bool.isRequired,
+  fetching:  PropTypes.bool.isRequired,
+  getDetail: PropTypes.func.isRequired,
+  isMobile:  PropTypes.func.isRequired,
+  repoName:  PropTypes.string,
 }
