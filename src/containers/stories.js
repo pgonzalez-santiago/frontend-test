@@ -1,0 +1,37 @@
+import React from 'react'
+import { storiesOf } from '@storybook/react'
+import { MemoryRouter } from 'react-router'
+import { Provider } from 'react-redux'
+
+// Containers
+import ContributorsList from './contributorsList'
+import RepositoryDetail from './repositoryDetail'
+import SliderContent from './sliderContent'
+
+import store from '../store'
+
+import Colors from '../assets/colors'
+
+import { username, password } from '../config'
+
+// Login
+store.dispatch({ pwd: password, type: 'GITHUB_LOGIN_REQUEST', user: username })
+
+storiesOf('Containers', module)
+  .addDecorator(story => <Provider store={store}>{story()}</Provider>)
+  .addDecorator(story => (
+    <MemoryRouter initialEntries={['/']}>{story()}</MemoryRouter>
+  ))
+  .add('Contributors List', () => (
+    <div style={{ height: '100%', overflow: 'auto' }}>
+      <ContributorsList repoName={'react'} />
+    </div>
+  ))
+  .add('Repository Detail', () => (
+    <RepositoryDetail repoName={'react'} />
+  ))
+  .add('Slider Content', () => (
+    <div style={{ backgroundColor: Colors.backgroundColor }}>
+      <SliderContent onItemClick={() => null}/>
+    </div>
+  ))

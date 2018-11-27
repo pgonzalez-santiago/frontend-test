@@ -9,5 +9,5 @@
 ## Usage
 
 ```html
-<RepositoryDetail repoName={repoName} />
+<RepositoryDetail repoName={'react'} />
 ```
