@@ -8,6 +8,7 @@ import RepositoryContributorsActions from '../store/reducers/repositoryContribut
 
 // Components
 import Spinner from '../components/spinner'
+import ContibutorItem from '../components/contributorItem'
 
 // External dependencies
 import styled from 'styled-components'
@@ -79,7 +80,10 @@ class ContributorsList extends PureComponent {
       <ListWrapper>
         {contributors.map((item, index) => {
           return (
-            <div key={item.id}>{item.login}</div>
+            <ContibutorItem
+              key={item.id}
+              contributor={item}
+            />
           )
         })}
       </ListWrapper>
