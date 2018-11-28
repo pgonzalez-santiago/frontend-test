@@ -12,6 +12,14 @@ import SliderList from './sliderList'
 import SliderListSpinner from './sliderListSpinner'
 import Spinner from './spinner'
 
+// Readme
+import GithubLogoMd from './githubLogo.md'
+import ContributorItemMd from './contributorItem.md'
+import SliderItemMd from './sliderItem.md'
+import SliderListMd from './sliderList.md'
+import SliderListSpinnerMd from './sliderListSpinner.md'
+import SpinnerMd from './spinner.md'
+
 import '../containers/styles/sliderContent.scss'
 import Colors from '../assets/colors'
 import '../assets/lang'
@@ -51,8 +59,9 @@ storiesOf('Components', module)
         display: 'block',
         fill:    'currentColor',
         margin:  '0 auto',
-      }}/>
-  ))
+      }}/>), {
+    notes: { markdown: GithubLogoMd },
+  })
   .add('Contributor Item', () => (
     <ContributorItem
       contributor={{
@@ -61,8 +70,9 @@ storiesOf('Components', module)
         html_url:      'https://github.com/wokalski',
         login:         'wokalski',
       }}
-    />
-  ))
+    />), {
+    notes: { markdown: ContributorItemMd },
+  })
   .add('Slider Item', () => (
     <div className="slider-content bm-item-list" style={{ background: Colors.backgroundColor }}>
       <SliderItem
@@ -72,8 +82,9 @@ storiesOf('Components', module)
         stars={1523}
         watchers={786}
       />
-    </div>
-  ))
+    </div>), {
+    notes: { markdown: SliderItemMd },
+  })
   .add('Slider List', () => (
     <div className="slider-content bm-item-list" style={{ background: Colors.backgroundColor }}>
       <SliderList
@@ -87,14 +98,17 @@ storiesOf('Components', module)
         }}
         repositories={repositoriesExample}
       />
-    </div>
-  ))
+    </div>), {
+    notes: { markdown: SliderListMd },
+  })
   .add('Slider List Spinner', () => (
-    <SliderListSpinner fetching={true} />
-  ))
+    <SliderListSpinner fetching={true} />), {
+    notes: { markdown: SliderListSpinnerMd },
+  })
   .add('Spinner', () => (
     <Spinner
       color="#c94e50"
       size={50}
-      style={''}/>
-  ))
+      style={''}/>), {
+    notes: { markdown: SpinnerMd },
+  })

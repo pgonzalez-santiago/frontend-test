@@ -8,6 +8,11 @@ import ContributorsList from './contributorsList'
 import RepositoryDetail from './repositoryDetail'
 import SliderContent from './sliderContent'
 
+// Readme
+import ContributorsListMd from './contributorsList.md'
+import RepositoryDetailMd from './repositoryDetail.md'
+import SliderContentMd from './sliderContent.md'
+
 import store from '../store'
 
 import Colors from '../assets/colors'
@@ -25,13 +30,16 @@ storiesOf('Containers', module)
   .add('Contributors List', () => (
     <div style={{ height: '100%', overflow: 'auto' }}>
       <ContributorsList repoName={'react'} />
-    </div>
-  ))
+    </div>), {
+    notes: { markdown: ContributorsListMd },
+  })
   .add('Repository Detail', () => (
-    <RepositoryDetail repoName={'react'} />
-  ))
+    <RepositoryDetail repoName={'react'} />), {
+    notes: { markdown: RepositoryDetailMd },
+  })
   .add('Slider Content', () => (
     <div style={{ backgroundColor: Colors.backgroundColor }}>
       <SliderContent onItemClick={() => null}/>
-    </div>
-  ))
+    </div>), {
+    notes: { markdown: SliderContentMd },
+  })
