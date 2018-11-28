@@ -11,8 +11,8 @@ import SliderContent from './sliderContent'
 import store from '../store'
 
 import Colors from '../assets/colors'
-
-import { username, password } from '../config'
+// Enviroment
+const { REACT_APP_USERNAME: username, REACT_APP_PASSWORD: password } = process.env
 
 // Login
 store.dispatch({ pwd: password, type: 'GITHUB_LOGIN_REQUEST', user: username })

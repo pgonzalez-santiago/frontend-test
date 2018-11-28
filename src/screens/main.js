@@ -8,8 +8,6 @@ import RepositoryDetail from '../containers/repositoryDetail'
 import Spinner from '../components/spinner'
 // Redux
 import GithubLoginActions from '../store/reducers/githubLogin'
-// Config
-import { username, password } from '../config'
 // Styles
 import './styles/mainScreen.scss'
 import Colors from '../assets/colors'
@@ -21,6 +19,8 @@ import { withGetScreen } from 'react-getscreen'
 import I18n from 'i18n-js'
 
 import { pathOr } from 'ramda'
+// Enviroment
+const { REACT_APP_USERNAME: username, REACT_APP_PASSWORD: password } = process.env
 
 const Title = styled.span`
   color: ${Colors.primaryColor};
