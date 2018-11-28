@@ -1,0 +1,412 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SliderList Dom structure has not change 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <SliderList
+    error={false}
+    fetching={false}
+    loadMore={[Function]}
+    onItemClick={[Function]}
+    pagination={
+      Object {
+        "endCursor": "xxx",
+        "hasNextPage": true,
+      }
+    }
+    repositories={
+      Array [
+        Object {
+          "name": "react",
+          "stars": 116391,
+          "to": "/react",
+          "watchers": 6592,
+        },
+        Object {
+          "name": "react-native",
+          "stars": 71324,
+          "to": "/react-native",
+          "watchers": 3729,
+        },
+        Object {
+          "name": "create-react-app",
+          "stars": 59759,
+          "to": "/create-react-app",
+          "watchers": 1766,
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": <InfiniteScroll
+        dataLength={3}
+        disableBrowserPullToRefresh={true}
+        hasMore={true}
+        loader={
+          <SliderListSpinner
+            fetching={false}
+          />
+        }
+        next={[Function]}
+        pullDownToRefreshContent={
+          <h3>
+            Pull down to refresh
+          </h3>
+        }
+        pullDownToRefreshThreshold={100}
+        releaseToRefreshContent={
+          <h3>
+            Release to refresh
+          </h3>
+        }
+        scrollableTarget="slider-scroll-container"
+      >
+        <SliderItem
+          name="react"
+          onClick={[Function]}
+          stars={116391}
+          to="/react"
+          watchers={6592}
+        />
+        <SliderItem
+          name="react-native"
+          onClick={[Function]}
+          stars={71324}
+          to="/react-native"
+          watchers={3729}
+        />
+        <SliderItem
+          name="create-react-app"
+          onClick={[Function]}
+          stars={59759}
+          to="/create-react-app"
+          watchers={1766}
+        />
+      </InfiniteScroll>,
+      "id": "slider-scroll-container",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <SliderItem
+            name="react"
+            onClick={[Function]}
+            stars={116391}
+            to="/react"
+            watchers={6592}
+          />,
+          <SliderItem
+            name="react-native"
+            onClick={[Function]}
+            stars={71324}
+            to="/react-native"
+            watchers={3729}
+          />,
+          <SliderItem
+            name="create-react-app"
+            onClick={[Function]}
+            stars={59759}
+            to="/create-react-app"
+            watchers={1766}
+          />,
+        ],
+        "dataLength": 3,
+        "disableBrowserPullToRefresh": true,
+        "hasMore": true,
+        "loader": <SliderListSpinner
+          fetching={false}
+        />,
+        "next": [Function],
+        "pullDownToRefreshContent": <h3>
+          Pull down to refresh
+        </h3>,
+        "pullDownToRefreshThreshold": 100,
+        "releaseToRefreshContent": <h3>
+          Release to refresh
+        </h3>,
+        "scrollableTarget": "slider-scroll-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "0",
+          "nodeType": "function",
+          "props": Object {
+            "name": "react",
+            "onClick": [Function],
+            "stars": 116391,
+            "to": "/react",
+            "watchers": 6592,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "function",
+          "props": Object {
+            "name": "react-native",
+            "onClick": [Function],
+            "stars": 71324,
+            "to": "/react-native",
+            "watchers": 3729,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "2",
+          "nodeType": "function",
+          "props": Object {
+            "name": "create-react-app",
+            "onClick": [Function],
+            "stars": 59759,
+            "to": "/create-react-app",
+            "watchers": 1766,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-htpNat",
+        "isStatic": true,
+        "rules": Array [
+          "
+  height: ",
+          "618",
+          "px;
+  overflow: auto;
+  padding-top: 10px;
+",
+        ],
+      },
+      "displayName": "styled.div",
+      "render": [Function],
+      "styledComponentId": "sc-htpNat",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    },
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <InfiniteScroll
+          dataLength={3}
+          disableBrowserPullToRefresh={true}
+          hasMore={true}
+          loader={
+            <SliderListSpinner
+              fetching={false}
+            />
+          }
+          next={[Function]}
+          pullDownToRefreshContent={
+            <h3>
+              Pull down to refresh
+            </h3>
+          }
+          pullDownToRefreshThreshold={100}
+          releaseToRefreshContent={
+            <h3>
+              Release to refresh
+            </h3>
+          }
+          scrollableTarget="slider-scroll-container"
+        >
+          <SliderItem
+            name="react"
+            onClick={[Function]}
+            stars={116391}
+            to="/react"
+            watchers={6592}
+          />
+          <SliderItem
+            name="react-native"
+            onClick={[Function]}
+            stars={71324}
+            to="/react-native"
+            watchers={3729}
+          />
+          <SliderItem
+            name="create-react-app"
+            onClick={[Function]}
+            stars={59759}
+            to="/create-react-app"
+            watchers={1766}
+          />
+        </InfiniteScroll>,
+        "id": "slider-scroll-container",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <SliderItem
+              name="react"
+              onClick={[Function]}
+              stars={116391}
+              to="/react"
+              watchers={6592}
+            />,
+            <SliderItem
+              name="react-native"
+              onClick={[Function]}
+              stars={71324}
+              to="/react-native"
+              watchers={3729}
+            />,
+            <SliderItem
+              name="create-react-app"
+              onClick={[Function]}
+              stars={59759}
+              to="/create-react-app"
+              watchers={1766}
+            />,
+          ],
+          "dataLength": 3,
+          "disableBrowserPullToRefresh": true,
+          "hasMore": true,
+          "loader": <SliderListSpinner
+            fetching={false}
+          />,
+          "next": [Function],
+          "pullDownToRefreshContent": <h3>
+            Pull down to refresh
+          </h3>,
+          "pullDownToRefreshThreshold": 100,
+          "releaseToRefreshContent": <h3>
+            Release to refresh
+          </h3>,
+          "scrollableTarget": "slider-scroll-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "function",
+            "props": Object {
+              "name": "react",
+              "onClick": [Function],
+              "stars": 116391,
+              "to": "/react",
+              "watchers": 6592,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "function",
+            "props": Object {
+              "name": "react-native",
+              "onClick": [Function],
+              "stars": 71324,
+              "to": "/react-native",
+              "watchers": 3729,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "2",
+            "nodeType": "function",
+            "props": Object {
+              "name": "create-react-app",
+              "onClick": [Function],
+              "stars": 59759,
+              "to": "/create-react-app",
+              "watchers": 1766,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-htpNat",
+          "isStatic": true,
+          "rules": Array [
+            "
+  height: ",
+            "618",
+            "px;
+  overflow: auto;
+  padding-top: 10px;
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "render": [Function],
+        "styledComponentId": "sc-htpNat",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

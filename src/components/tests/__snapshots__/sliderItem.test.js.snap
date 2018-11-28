@@ -1,0 +1,257 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SliderItem Dom structure has not change 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <SliderItem
+    name="React"
+    onClick={[Function]}
+    stars={1523}
+    to="/react"
+    watchers={786}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "activeClassName": "active",
+      "activeStyle": Object {
+        "color": "#c94e50",
+        "fontWeight": "bold",
+      },
+      "aria-current": "page",
+      "children": Array [
+        "React",
+        <ForwardRef>
+          <span>
+            [missing "en.stars" translation]: 1523
+             
+          </span>
+          <span>
+            [missing "en.watchers" translation]: 786
+             
+          </span>
+        </ForwardRef>,
+      ],
+      "onClick": [Function],
+      "to": "/react",
+    },
+    "ref": null,
+    "rendered": Array [
+      "React",
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <span>
+              [missing "en.stars" translation]: 1523
+               
+            </span>,
+            <span>
+              [missing "en.watchers" translation]: 786
+               
+            </span>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "[missing \\"en.stars\\" translation]: 1523",
+                " ",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "[missing \\"en.stars\\" translation]: 1523",
+              " ",
+            ],
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "[missing \\"en.watchers\\" translation]: 786",
+                " ",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "[missing \\"en.watchers\\" translation]: 786",
+              " ",
+            ],
+            "type": "span",
+          },
+        ],
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": true,
+            "rules": Array [
+              "
+  font-size: 10px;
+  opacity: 0.3;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "activeClassName": "active",
+        "activeStyle": Object {
+          "color": "#c94e50",
+          "fontWeight": "bold",
+        },
+        "aria-current": "page",
+        "children": Array [
+          "React",
+          <ForwardRef>
+            <span>
+              [missing "en.stars" translation]: 1523
+               
+            </span>
+            <span>
+              [missing "en.watchers" translation]: 786
+               
+            </span>
+          </ForwardRef>,
+        ],
+        "onClick": [Function],
+        "to": "/react",
+      },
+      "ref": null,
+      "rendered": Array [
+        "React",
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <span>
+                [missing "en.stars" translation]: 1523
+                 
+              </span>,
+              <span>
+                [missing "en.watchers" translation]: 786
+                 
+              </span>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "[missing \\"en.stars\\" translation]: 1523",
+                  " ",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "[missing \\"en.stars\\" translation]: 1523",
+                " ",
+              ],
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "[missing \\"en.watchers\\" translation]: 786",
+                  " ",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "[missing \\"en.watchers\\" translation]: 786",
+                " ",
+              ],
+              "type": "span",
+            },
+          ],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bdVaJa",
+              "isStatic": true,
+              "rules": Array [
+                "
+  font-size: 10px;
+  opacity: 0.3;
+",
+              ],
+            },
+            "displayName": "styled.div",
+            "render": [Function],
+            "styledComponentId": "sc-bdVaJa",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
