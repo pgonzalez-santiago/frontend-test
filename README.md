@@ -55,6 +55,8 @@ yarn storybook
 
 - **Why application uses [reduxsauce](https://github.com/infinitered/reduxsauce)?**
 
+- This application also have a mobile version, try it in your mobile phone :)
+
   Creating Reducers and Actions on Redux sometimes made complicated because of too large switch statements for a single reducer, reduxsauce is here to save the day. It comes with too many magic and simplicity for your redux needs! even it comes with resettable reducer option. Reduxsauce just need one file to handle Actions for a Reducer and the Reducer itself, with minimum lines of code that also readable.
 
 ## Component structure
