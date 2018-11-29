@@ -32,7 +32,6 @@ ShallowWrapper {
         </span>
       </ForwardRef>,
       "id": "page-wrap",
-      "isMobile": false,
     },
     "ref": null,
     "rendered": Object {
@@ -97,9 +96,7 @@ ShallowWrapper {
         "isStatic": false,
         "rules": Array [
           "
-  width: ",
-          [Function],
-          ";
+  width: 'auto';
   overflow: auto;
   position: absolute;
   top: ",
@@ -134,7 +131,6 @@ ShallowWrapper {
           </span>
         </ForwardRef>,
         "id": "page-wrap",
-        "isMobile": false,
       },
       "ref": null,
       "rendered": Object {
@@ -199,9 +195,7 @@ ShallowWrapper {
           "isStatic": false,
           "rules": Array [
             "
-  width: ",
-            [Function],
-            ";
+  width: 'auto';
   overflow: auto;
   position: absolute;
   top: ",
@@ -276,7 +270,6 @@ ShallowWrapper {
         />
       </ForwardRef>,
       "id": "page-wrap",
-      "isMobile": false,
     },
     "ref": null,
     "rendered": Object {
@@ -343,9 +336,7 @@ ShallowWrapper {
         "isStatic": false,
         "rules": Array [
           "
-  width: ",
-          [Function],
-          ";
+  width: 'auto';
   overflow: auto;
   position: absolute;
   top: ",
@@ -381,7 +372,6 @@ ShallowWrapper {
           />
         </ForwardRef>,
         "id": "page-wrap",
-        "isMobile": false,
       },
       "ref": null,
       "rendered": Object {
@@ -448,9 +438,7 @@ ShallowWrapper {
           "isStatic": false,
           "rules": Array [
             "
-  width: ",
-            [Function],
-            ";
+  width: 'auto';
   overflow: auto;
   position: absolute;
   top: ",
@@ -535,36 +523,52 @@ ShallowWrapper {
         </ForwardRef>
         <ForwardRef>
           <p>
-            Name: 
+            <ForwardRef>
+              Name: 
+            </ForwardRef>
             react-native
           </p>
           <p>
-            Description: 
+            <ForwardRef>
+              Description: 
+            </ForwardRef>
             A framework for building native apps with React.
           </p>
           <p>
-            Forks: 
+            <ForwardRef>
+              Forks: 
+            </ForwardRef>
             15461
           </p>
           <p>
-            Issues: 
+            <ForwardRef>
+              Issues: 
+            </ForwardRef>
              
             14658
           </p>
           <p>
-            Pull requests: 
+            <ForwardRef>
+              Pull requests: 
+            </ForwardRef>
             7625
           </p>
           <p>
-            Release: 
+            <ForwardRef>
+              Release: 
+            </ForwardRef>
             15461
           </p>
           <p>
-            Stars: 
+            <ForwardRef>
+              Stars: 
+            </ForwardRef>
             71397
           </p>
           <p>
-            Watchers: 
+            <ForwardRef>
+              Watchers: 
+            </ForwardRef>
             3712
           </p>
         </ForwardRef>
@@ -573,7 +577,6 @@ ShallowWrapper {
         />
       </ForwardRef>,
       "id": "page-wrap",
-      "isMobile": false,
     },
     "ref": null,
     "rendered": Object {
@@ -587,36 +590,52 @@ ShallowWrapper {
           </ForwardRef>,
           <ForwardRef>
             <p>
-              Name: 
+              <ForwardRef>
+                Name: 
+              </ForwardRef>
               react-native
             </p>
             <p>
-              Description: 
+              <ForwardRef>
+                Description: 
+              </ForwardRef>
               A framework for building native apps with React.
             </p>
             <p>
-              Forks: 
+              <ForwardRef>
+                Forks: 
+              </ForwardRef>
               15461
             </p>
             <p>
-              Issues: 
+              <ForwardRef>
+                Issues: 
+              </ForwardRef>
                
               14658
             </p>
             <p>
-              Pull requests: 
+              <ForwardRef>
+                Pull requests: 
+              </ForwardRef>
               7625
             </p>
             <p>
-              Release: 
+              <ForwardRef>
+                Release: 
+              </ForwardRef>
               15461
             </p>
             <p>
-              Stars: 
+              <ForwardRef>
+                Stars: 
+              </ForwardRef>
               71397
             </p>
             <p>
-              Watchers: 
+              <ForwardRef>
+                Watchers: 
+              </ForwardRef>
               3712
             </p>
           </ForwardRef>,
@@ -667,36 +686,52 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <p>
-                Name: 
+                <ForwardRef>
+                  Name: 
+                </ForwardRef>
                 react-native
               </p>,
               <p>
-                Description: 
+                <ForwardRef>
+                  Description: 
+                </ForwardRef>
                 A framework for building native apps with React.
               </p>,
               <p>
-                Forks: 
+                <ForwardRef>
+                  Forks: 
+                </ForwardRef>
                 15461
               </p>,
               <p>
-                Issues: 
+                <ForwardRef>
+                  Issues: 
+                </ForwardRef>
                  
                 14658
               </p>,
               <p>
-                Pull requests: 
+                <ForwardRef>
+                  Pull requests: 
+                </ForwardRef>
                 7625
               </p>,
               <p>
-                Release: 
+                <ForwardRef>
+                  Release: 
+                </ForwardRef>
                 15461
               </p>,
               <p>
-                Stars: 
+                <ForwardRef>
+                  Stars: 
+                </ForwardRef>
                 71397
               </p>,
               <p>
-                Watchers: 
+                <ForwardRef>
+                  Watchers: 
+                </ForwardRef>
                 3712
               </p>,
             ],
@@ -709,13 +744,48 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "Name: ",
+                  <ForwardRef>
+                    Name: 
+                  </ForwardRef>,
                   "react-native",
                 ],
               },
               "ref": null,
               "rendered": Array [
-                "Name: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": "Name: ",
+                  },
+                  "ref": null,
+                  "rendered": "Name: ",
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-gZMcBi",
+                      "isStatic": true,
+                      "rules": Array [
+                        "
+  font-weight: bold;
+  color: ",
+                        "#24292e",
+                        ";
+  text-transform: uppercase;
+",
+                      ],
+                    },
+                    "displayName": "styled.span",
+                    "render": [Function],
+                    "styledComponentId": "sc-gZMcBi",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  },
+                },
                 "react-native",
               ],
               "type": "p",
@@ -726,13 +796,48 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "Description: ",
+                  <ForwardRef>
+                    Description: 
+                  </ForwardRef>,
                   "A framework for building native apps with React.",
                 ],
               },
               "ref": null,
               "rendered": Array [
-                "Description: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": "Description: ",
+                  },
+                  "ref": null,
+                  "rendered": "Description: ",
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-gZMcBi",
+                      "isStatic": true,
+                      "rules": Array [
+                        "
+  font-weight: bold;
+  color: ",
+                        "#24292e",
+                        ";
+  text-transform: uppercase;
+",
+                      ],
+                    },
+                    "displayName": "styled.span",
+                    "render": [Function],
+                    "styledComponentId": "sc-gZMcBi",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  },
+                },
                 "A framework for building native apps with React.",
               ],
               "type": "p",
@@ -743,13 +848,48 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "Forks: ",
+                  <ForwardRef>
+                    Forks: 
+                  </ForwardRef>,
                   15461,
                 ],
               },
               "ref": null,
               "rendered": Array [
-                "Forks: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": "Forks: ",
+                  },
+                  "ref": null,
+                  "rendered": "Forks: ",
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-gZMcBi",
+                      "isStatic": true,
+                      "rules": Array [
+                        "
+  font-weight: bold;
+  color: ",
+                        "#24292e",
+                        ";
+  text-transform: uppercase;
+",
+                      ],
+                    },
+                    "displayName": "styled.span",
+                    "render": [Function],
+                    "styledComponentId": "sc-gZMcBi",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  },
+                },
                 15461,
               ],
               "type": "p",
@@ -760,14 +900,49 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "Issues: ",
+                  <ForwardRef>
+                    Issues: 
+                  </ForwardRef>,
                   " ",
                   14658,
                 ],
               },
               "ref": null,
               "rendered": Array [
-                "Issues: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": "Issues: ",
+                  },
+                  "ref": null,
+                  "rendered": "Issues: ",
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-gZMcBi",
+                      "isStatic": true,
+                      "rules": Array [
+                        "
+  font-weight: bold;
+  color: ",
+                        "#24292e",
+                        ";
+  text-transform: uppercase;
+",
+                      ],
+                    },
+                    "displayName": "styled.span",
+                    "render": [Function],
+                    "styledComponentId": "sc-gZMcBi",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  },
+                },
                 " ",
                 14658,
               ],
@@ -779,13 +954,48 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "Pull requests: ",
+                  <ForwardRef>
+                    Pull requests: 
+                  </ForwardRef>,
                   7625,
                 ],
               },
               "ref": null,
               "rendered": Array [
-                "Pull requests: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": "Pull requests: ",
+                  },
+                  "ref": null,
+                  "rendered": "Pull requests: ",
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-gZMcBi",
+                      "isStatic": true,
+                      "rules": Array [
+                        "
+  font-weight: bold;
+  color: ",
+                        "#24292e",
+                        ";
+  text-transform: uppercase;
+",
+                      ],
+                    },
+                    "displayName": "styled.span",
+                    "render": [Function],
+                    "styledComponentId": "sc-gZMcBi",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  },
+                },
                 7625,
               ],
               "type": "p",
@@ -796,13 +1006,48 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "Release: ",
+                  <ForwardRef>
+                    Release: 
+                  </ForwardRef>,
                   15461,
                 ],
               },
               "ref": null,
               "rendered": Array [
-                "Release: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": "Release: ",
+                  },
+                  "ref": null,
+                  "rendered": "Release: ",
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-gZMcBi",
+                      "isStatic": true,
+                      "rules": Array [
+                        "
+  font-weight: bold;
+  color: ",
+                        "#24292e",
+                        ";
+  text-transform: uppercase;
+",
+                      ],
+                    },
+                    "displayName": "styled.span",
+                    "render": [Function],
+                    "styledComponentId": "sc-gZMcBi",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  },
+                },
                 15461,
               ],
               "type": "p",
@@ -813,13 +1058,48 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "Stars: ",
+                  <ForwardRef>
+                    Stars: 
+                  </ForwardRef>,
                   71397,
                 ],
               },
               "ref": null,
               "rendered": Array [
-                "Stars: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": "Stars: ",
+                  },
+                  "ref": null,
+                  "rendered": "Stars: ",
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-gZMcBi",
+                      "isStatic": true,
+                      "rules": Array [
+                        "
+  font-weight: bold;
+  color: ",
+                        "#24292e",
+                        ";
+  text-transform: uppercase;
+",
+                      ],
+                    },
+                    "displayName": "styled.span",
+                    "render": [Function],
+                    "styledComponentId": "sc-gZMcBi",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  },
+                },
                 71397,
               ],
               "type": "p",
@@ -830,13 +1110,48 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "Watchers: ",
+                  <ForwardRef>
+                    Watchers: 
+                  </ForwardRef>,
                   3712,
                 ],
               },
               "ref": null,
               "rendered": Array [
-                "Watchers: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": "Watchers: ",
+                  },
+                  "ref": null,
+                  "rendered": "Watchers: ",
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-gZMcBi",
+                      "isStatic": true,
+                      "rules": Array [
+                        "
+  font-weight: bold;
+  color: ",
+                        "#24292e",
+                        ";
+  text-transform: uppercase;
+",
+                      ],
+                    },
+                    "displayName": "styled.span",
+                    "render": [Function],
+                    "styledComponentId": "sc-gZMcBi",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  },
+                },
                 3712,
               ],
               "type": "p",
@@ -914,9 +1229,7 @@ ShallowWrapper {
         "isStatic": false,
         "rules": Array [
           "
-  width: ",
-          [Function],
-          ";
+  width: 'auto';
   overflow: auto;
   position: absolute;
   top: ",
@@ -949,36 +1262,52 @@ ShallowWrapper {
           </ForwardRef>
           <ForwardRef>
             <p>
-              Name: 
+              <ForwardRef>
+                Name: 
+              </ForwardRef>
               react-native
             </p>
             <p>
-              Description: 
+              <ForwardRef>
+                Description: 
+              </ForwardRef>
               A framework for building native apps with React.
             </p>
             <p>
-              Forks: 
+              <ForwardRef>
+                Forks: 
+              </ForwardRef>
               15461
             </p>
             <p>
-              Issues: 
+              <ForwardRef>
+                Issues: 
+              </ForwardRef>
                
               14658
             </p>
             <p>
-              Pull requests: 
+              <ForwardRef>
+                Pull requests: 
+              </ForwardRef>
               7625
             </p>
             <p>
-              Release: 
+              <ForwardRef>
+                Release: 
+              </ForwardRef>
               15461
             </p>
             <p>
-              Stars: 
+              <ForwardRef>
+                Stars: 
+              </ForwardRef>
               71397
             </p>
             <p>
-              Watchers: 
+              <ForwardRef>
+                Watchers: 
+              </ForwardRef>
               3712
             </p>
           </ForwardRef>
@@ -987,7 +1316,6 @@ ShallowWrapper {
           />
         </ForwardRef>,
         "id": "page-wrap",
-        "isMobile": false,
       },
       "ref": null,
       "rendered": Object {
@@ -1001,36 +1329,52 @@ ShallowWrapper {
             </ForwardRef>,
             <ForwardRef>
               <p>
-                Name: 
+                <ForwardRef>
+                  Name: 
+                </ForwardRef>
                 react-native
               </p>
               <p>
-                Description: 
+                <ForwardRef>
+                  Description: 
+                </ForwardRef>
                 A framework for building native apps with React.
               </p>
               <p>
-                Forks: 
+                <ForwardRef>
+                  Forks: 
+                </ForwardRef>
                 15461
               </p>
               <p>
-                Issues: 
+                <ForwardRef>
+                  Issues: 
+                </ForwardRef>
                  
                 14658
               </p>
               <p>
-                Pull requests: 
+                <ForwardRef>
+                  Pull requests: 
+                </ForwardRef>
                 7625
               </p>
               <p>
-                Release: 
+                <ForwardRef>
+                  Release: 
+                </ForwardRef>
                 15461
               </p>
               <p>
-                Stars: 
+                <ForwardRef>
+                  Stars: 
+                </ForwardRef>
                 71397
               </p>
               <p>
-                Watchers: 
+                <ForwardRef>
+                  Watchers: 
+                </ForwardRef>
                 3712
               </p>
             </ForwardRef>,
@@ -1081,36 +1425,52 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <p>
-                  Name: 
+                  <ForwardRef>
+                    Name: 
+                  </ForwardRef>
                   react-native
                 </p>,
                 <p>
-                  Description: 
+                  <ForwardRef>
+                    Description: 
+                  </ForwardRef>
                   A framework for building native apps with React.
                 </p>,
                 <p>
-                  Forks: 
+                  <ForwardRef>
+                    Forks: 
+                  </ForwardRef>
                   15461
                 </p>,
                 <p>
-                  Issues: 
+                  <ForwardRef>
+                    Issues: 
+                  </ForwardRef>
                    
                   14658
                 </p>,
                 <p>
-                  Pull requests: 
+                  <ForwardRef>
+                    Pull requests: 
+                  </ForwardRef>
                   7625
                 </p>,
                 <p>
-                  Release: 
+                  <ForwardRef>
+                    Release: 
+                  </ForwardRef>
                   15461
                 </p>,
                 <p>
-                  Stars: 
+                  <ForwardRef>
+                    Stars: 
+                  </ForwardRef>
                   71397
                 </p>,
                 <p>
-                  Watchers: 
+                  <ForwardRef>
+                    Watchers: 
+                  </ForwardRef>
                   3712
                 </p>,
               ],
@@ -1123,13 +1483,48 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    "Name: ",
+                    <ForwardRef>
+                      Name: 
+                    </ForwardRef>,
                     "react-native",
                   ],
                 },
                 "ref": null,
                 "rendered": Array [
-                  "Name: ",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "children": "Name: ",
+                    },
+                    "ref": null,
+                    "rendered": "Name: ",
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-gZMcBi",
+                        "isStatic": true,
+                        "rules": Array [
+                          "
+  font-weight: bold;
+  color: ",
+                          "#24292e",
+                          ";
+  text-transform: uppercase;
+",
+                        ],
+                      },
+                      "displayName": "styled.span",
+                      "render": [Function],
+                      "styledComponentId": "sc-gZMcBi",
+                      "target": "span",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    },
+                  },
                   "react-native",
                 ],
                 "type": "p",
@@ -1140,13 +1535,48 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    "Description: ",
+                    <ForwardRef>
+                      Description: 
+                    </ForwardRef>,
                     "A framework for building native apps with React.",
                   ],
                 },
                 "ref": null,
                 "rendered": Array [
-                  "Description: ",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "children": "Description: ",
+                    },
+                    "ref": null,
+                    "rendered": "Description: ",
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-gZMcBi",
+                        "isStatic": true,
+                        "rules": Array [
+                          "
+  font-weight: bold;
+  color: ",
+                          "#24292e",
+                          ";
+  text-transform: uppercase;
+",
+                        ],
+                      },
+                      "displayName": "styled.span",
+                      "render": [Function],
+                      "styledComponentId": "sc-gZMcBi",
+                      "target": "span",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    },
+                  },
                   "A framework for building native apps with React.",
                 ],
                 "type": "p",
@@ -1157,13 +1587,48 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    "Forks: ",
+                    <ForwardRef>
+                      Forks: 
+                    </ForwardRef>,
                     15461,
                   ],
                 },
                 "ref": null,
                 "rendered": Array [
-                  "Forks: ",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "children": "Forks: ",
+                    },
+                    "ref": null,
+                    "rendered": "Forks: ",
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-gZMcBi",
+                        "isStatic": true,
+                        "rules": Array [
+                          "
+  font-weight: bold;
+  color: ",
+                          "#24292e",
+                          ";
+  text-transform: uppercase;
+",
+                        ],
+                      },
+                      "displayName": "styled.span",
+                      "render": [Function],
+                      "styledComponentId": "sc-gZMcBi",
+                      "target": "span",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    },
+                  },
                   15461,
                 ],
                 "type": "p",
@@ -1174,14 +1639,49 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    "Issues: ",
+                    <ForwardRef>
+                      Issues: 
+                    </ForwardRef>,
                     " ",
                     14658,
                   ],
                 },
                 "ref": null,
                 "rendered": Array [
-                  "Issues: ",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "children": "Issues: ",
+                    },
+                    "ref": null,
+                    "rendered": "Issues: ",
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-gZMcBi",
+                        "isStatic": true,
+                        "rules": Array [
+                          "
+  font-weight: bold;
+  color: ",
+                          "#24292e",
+                          ";
+  text-transform: uppercase;
+",
+                        ],
+                      },
+                      "displayName": "styled.span",
+                      "render": [Function],
+                      "styledComponentId": "sc-gZMcBi",
+                      "target": "span",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    },
+                  },
                   " ",
                   14658,
                 ],
@@ -1193,13 +1693,48 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    "Pull requests: ",
+                    <ForwardRef>
+                      Pull requests: 
+                    </ForwardRef>,
                     7625,
                   ],
                 },
                 "ref": null,
                 "rendered": Array [
-                  "Pull requests: ",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "children": "Pull requests: ",
+                    },
+                    "ref": null,
+                    "rendered": "Pull requests: ",
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-gZMcBi",
+                        "isStatic": true,
+                        "rules": Array [
+                          "
+  font-weight: bold;
+  color: ",
+                          "#24292e",
+                          ";
+  text-transform: uppercase;
+",
+                        ],
+                      },
+                      "displayName": "styled.span",
+                      "render": [Function],
+                      "styledComponentId": "sc-gZMcBi",
+                      "target": "span",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    },
+                  },
                   7625,
                 ],
                 "type": "p",
@@ -1210,13 +1745,48 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    "Release: ",
+                    <ForwardRef>
+                      Release: 
+                    </ForwardRef>,
                     15461,
                   ],
                 },
                 "ref": null,
                 "rendered": Array [
-                  "Release: ",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "children": "Release: ",
+                    },
+                    "ref": null,
+                    "rendered": "Release: ",
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-gZMcBi",
+                        "isStatic": true,
+                        "rules": Array [
+                          "
+  font-weight: bold;
+  color: ",
+                          "#24292e",
+                          ";
+  text-transform: uppercase;
+",
+                        ],
+                      },
+                      "displayName": "styled.span",
+                      "render": [Function],
+                      "styledComponentId": "sc-gZMcBi",
+                      "target": "span",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    },
+                  },
                   15461,
                 ],
                 "type": "p",
@@ -1227,13 +1797,48 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    "Stars: ",
+                    <ForwardRef>
+                      Stars: 
+                    </ForwardRef>,
                     71397,
                   ],
                 },
                 "ref": null,
                 "rendered": Array [
-                  "Stars: ",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "children": "Stars: ",
+                    },
+                    "ref": null,
+                    "rendered": "Stars: ",
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-gZMcBi",
+                        "isStatic": true,
+                        "rules": Array [
+                          "
+  font-weight: bold;
+  color: ",
+                          "#24292e",
+                          ";
+  text-transform: uppercase;
+",
+                        ],
+                      },
+                      "displayName": "styled.span",
+                      "render": [Function],
+                      "styledComponentId": "sc-gZMcBi",
+                      "target": "span",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    },
+                  },
                   71397,
                 ],
                 "type": "p",
@@ -1244,13 +1849,48 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    "Watchers: ",
+                    <ForwardRef>
+                      Watchers: 
+                    </ForwardRef>,
                     3712,
                   ],
                 },
                 "ref": null,
                 "rendered": Array [
-                  "Watchers: ",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "children": "Watchers: ",
+                    },
+                    "ref": null,
+                    "rendered": "Watchers: ",
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-gZMcBi",
+                        "isStatic": true,
+                        "rules": Array [
+                          "
+  font-weight: bold;
+  color: ",
+                          "#24292e",
+                          ";
+  text-transform: uppercase;
+",
+                        ],
+                      },
+                      "displayName": "styled.span",
+                      "render": [Function],
+                      "styledComponentId": "sc-gZMcBi",
+                      "target": "span",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    },
+                  },
                   3712,
                 ],
                 "type": "p",
@@ -1328,9 +1968,7 @@ ShallowWrapper {
           "isStatic": false,
           "rules": Array [
             "
-  width: ",
-            [Function],
-            ";
+  width: 'auto';
   overflow: auto;
   position: absolute;
   top: ",
