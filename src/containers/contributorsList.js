@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
 // Redux
-// Redux
 import RepositoryContributorsActions from '../store/reducers/repositoryContributors'
 
 // Components
