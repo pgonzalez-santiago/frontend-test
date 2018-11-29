@@ -2,7 +2,7 @@
   "detailTitle": "Repository details",
   "contributorsList": "Contributors list",
   "loggingIn": "Logging in...",
-  "wrongLoginData": "Please insert in config.js file your username and password.",
+  "wrongLoginData": "Wrong login data! Please follow the README steps to run the application.",
   "stars": "Stars",
   "watchers": "Watchers",
   "errorMessage": "Ups something went wrong!!",
