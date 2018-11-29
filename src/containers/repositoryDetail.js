@@ -28,7 +28,7 @@ const Wrapper = styled.div`
 `
 
 const Container = styled.div`
-  width: ${(props) => props.isMobile ? 'auto' : '70%'};
+  width: 'auto';
   overflow: auto;
   position: absolute;
   top: ${(props) => props.isMobile ? '80px' : 0};
@@ -58,6 +58,12 @@ const MessageWrapper = styled.div`
   font-size: ${(props) => props.isMobile ? '20px' : '30px'};;
   text-transform: uppercase;
   padding: 20px;
+`
+
+const DetailRow = styled.span`
+  font-weight: bold;
+  color: ${Colors.backgroundColor};
+  text-transform: uppercase;
 `
 
 export class RepositoryDetail extends PureComponent {
@@ -110,14 +116,22 @@ export class RepositoryDetail extends PureComponent {
             {I18n.t('detailTitle')}
           </Title>
           <Detail>
-            <p>{I18n.t('Name')}{detail.name}</p>
-            <p>{I18n.t('Description')}{detail.description}</p>
-            <p>{I18n.t('Forks')}{detail.forks}</p>
-            <p>{I18n.t('Issues')} {detail.issues}</p>
-            <p>{I18n.t('Pull requests')}{detail.pullRequests}</p>
-            <p>{I18n.t('Release')}{detail.releases}</p>
-            <p>{I18n.t('Stars')}{detail.stars}</p>
-            <p>{I18n.t('Watchers')}{detail.watchers}</p>
+            <p>
+              <DetailRow>{I18n.t('Name')}</DetailRow>{detail.name}</p>
+            <p>
+              <DetailRow>{I18n.t('Description')}</DetailRow>{detail.description}</p>
+            <p>
+              <DetailRow>{I18n.t('Forks')}</DetailRow>{detail.forks}</p>
+            <p>
+              <DetailRow>{I18n.t('Issues')}</DetailRow> {detail.issues}</p>
+            <p>
+              <DetailRow>{I18n.t('Pull requests')}</DetailRow>{detail.pullRequests}</p>
+            <p>
+              <DetailRow>{I18n.t('Release')}</DetailRow>{detail.releases}</p>
+            <p>
+              <DetailRow>{I18n.t('Stars')}</DetailRow>{detail.stars}</p>
+            <p>
+              <DetailRow>{I18n.t('Watchers')}</DetailRow>{detail.watchers}</p>
           </Detail>
           <ContributorsList repoName={repoName}/>
         </Wrapper>
@@ -133,10 +147,8 @@ export class RepositoryDetail extends PureComponent {
   }
 
   render () {
-    const { isMobile } = this.props
-
     return (
-      <Container id="page-wrap" isMobile={isMobile()}>
+      <Container id="page-wrap">
         {this.renderContent()}
       </Container>
     )
