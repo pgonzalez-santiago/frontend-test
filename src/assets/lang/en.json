@@ -14,5 +14,6 @@
   "Pull requests":"Pull requests: ",
   "Release":"Release: ",
   "Stars":"Stars: ",
-  "Watchers":"Watchers: "
+  "Watchers":"Watchers: ",
+  "noMatchText": "Hey hey hey! What are you doing here?"
 }

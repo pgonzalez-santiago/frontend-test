@@ -3,11 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 // Screens
 import MainScreen from './main.js'
-
-// TODO: Create not match component to be render when the specifed path does not match
-const NoMatch = () => (
-  <span> No Found screen </span>
-)
+import NoMatch from './noMatch.js'
 
 // Routes of the application
 const AppRouter = () => (
