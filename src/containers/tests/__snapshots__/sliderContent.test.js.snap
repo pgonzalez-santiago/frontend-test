@@ -1,0 +1,972 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SliderContent SliderContent Dom structure has not change when error 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <SliderContent
+    error={true}
+    fetching={false}
+    getRepositories={[Function]}
+    onItemClick={[Function]}
+    pagination={
+      Object {
+        "endCursor": "",
+        "hasNextPage": false,
+      }
+    }
+    repositories={Array []}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <ForwardRef>
+          <GithubLogo
+            height={40}
+            style={
+              Object {
+                "color": "#b8b7ad",
+                "display": "block",
+                "fill": "currentColor",
+                "margin": "0 auto",
+              }
+            }
+            width={40}
+          />
+        </ForwardRef>,
+        <SliderList
+          error={true}
+          fetching={false}
+          loadMore={[Function]}
+          onItemClick={[Function]}
+          pagination={
+            Object {
+              "endCursor": "",
+              "hasNextPage": false,
+            }
+          }
+          repositories={Array []}
+        />,
+      ],
+      "className": "slider-content bm-item-list",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": <GithubLogo
+            height={40}
+            style={
+              Object {
+                "color": "#b8b7ad",
+                "display": "block",
+                "fill": "currentColor",
+                "margin": "0 auto",
+              }
+            }
+            width={40}
+          />,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "height": 40,
+            "style": Object {
+              "color": "#b8b7ad",
+              "display": "block",
+              "fill": "currentColor",
+              "margin": "0 auto",
+            },
+            "width": 40,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-ifAKCX",
+            "isStatic": true,
+            "rules": Array [
+              "
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid ",
+              "#b8b7ad",
+              ";
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "render": [Function],
+          "styledComponentId": "sc-ifAKCX",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "error": true,
+          "fetching": false,
+          "loadMore": [Function],
+          "onItemClick": [Function],
+          "pagination": Object {
+            "endCursor": "",
+            "hasNextPage": false,
+          },
+          "repositories": Array [],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <ForwardRef>
+            <GithubLogo
+              height={40}
+              style={
+                Object {
+                  "color": "#b8b7ad",
+                  "display": "block",
+                  "fill": "currentColor",
+                  "margin": "0 auto",
+                }
+              }
+              width={40}
+            />
+          </ForwardRef>,
+          <SliderList
+            error={true}
+            fetching={false}
+            loadMore={[Function]}
+            onItemClick={[Function]}
+            pagination={
+              Object {
+                "endCursor": "",
+                "hasNextPage": false,
+              }
+            }
+            repositories={Array []}
+          />,
+        ],
+        "className": "slider-content bm-item-list",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": <GithubLogo
+              height={40}
+              style={
+                Object {
+                  "color": "#b8b7ad",
+                  "display": "block",
+                  "fill": "currentColor",
+                  "margin": "0 auto",
+                }
+              }
+              width={40}
+            />,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "height": 40,
+              "style": Object {
+                "color": "#b8b7ad",
+                "display": "block",
+                "fill": "currentColor",
+                "margin": "0 auto",
+              },
+              "width": 40,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-ifAKCX",
+              "isStatic": true,
+              "rules": Array [
+                "
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid ",
+                "#b8b7ad",
+                ";
+",
+              ],
+            },
+            "displayName": "styled.div",
+            "render": [Function],
+            "styledComponentId": "sc-ifAKCX",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "error": true,
+            "fetching": false,
+            "loadMore": [Function],
+            "onItemClick": [Function],
+            "pagination": Object {
+              "endCursor": "",
+              "hasNextPage": false,
+            },
+            "repositories": Array [],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`SliderContent SliderContent Dom structure has not change when fetching 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <SliderContent
+    error={false}
+    fetching={true}
+    getRepositories={[Function]}
+    onItemClick={[Function]}
+    pagination={
+      Object {
+        "endCursor": "",
+        "hasNextPage": false,
+      }
+    }
+    repositories={Array []}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <ForwardRef>
+          <GithubLogo
+            height={40}
+            style={
+              Object {
+                "color": "#b8b7ad",
+                "display": "block",
+                "fill": "currentColor",
+                "margin": "0 auto",
+              }
+            }
+            width={40}
+          />
+        </ForwardRef>,
+        <SliderList
+          error={false}
+          fetching={true}
+          loadMore={[Function]}
+          onItemClick={[Function]}
+          pagination={
+            Object {
+              "endCursor": "",
+              "hasNextPage": false,
+            }
+          }
+          repositories={Array []}
+        />,
+      ],
+      "className": "slider-content bm-item-list",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": <GithubLogo
+            height={40}
+            style={
+              Object {
+                "color": "#b8b7ad",
+                "display": "block",
+                "fill": "currentColor",
+                "margin": "0 auto",
+              }
+            }
+            width={40}
+          />,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "height": 40,
+            "style": Object {
+              "color": "#b8b7ad",
+              "display": "block",
+              "fill": "currentColor",
+              "margin": "0 auto",
+            },
+            "width": 40,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-ifAKCX",
+            "isStatic": true,
+            "rules": Array [
+              "
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid ",
+              "#b8b7ad",
+              ";
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "render": [Function],
+          "styledComponentId": "sc-ifAKCX",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "error": false,
+          "fetching": true,
+          "loadMore": [Function],
+          "onItemClick": [Function],
+          "pagination": Object {
+            "endCursor": "",
+            "hasNextPage": false,
+          },
+          "repositories": Array [],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <ForwardRef>
+            <GithubLogo
+              height={40}
+              style={
+                Object {
+                  "color": "#b8b7ad",
+                  "display": "block",
+                  "fill": "currentColor",
+                  "margin": "0 auto",
+                }
+              }
+              width={40}
+            />
+          </ForwardRef>,
+          <SliderList
+            error={false}
+            fetching={true}
+            loadMore={[Function]}
+            onItemClick={[Function]}
+            pagination={
+              Object {
+                "endCursor": "",
+                "hasNextPage": false,
+              }
+            }
+            repositories={Array []}
+          />,
+        ],
+        "className": "slider-content bm-item-list",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": <GithubLogo
+              height={40}
+              style={
+                Object {
+                  "color": "#b8b7ad",
+                  "display": "block",
+                  "fill": "currentColor",
+                  "margin": "0 auto",
+                }
+              }
+              width={40}
+            />,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "height": 40,
+              "style": Object {
+                "color": "#b8b7ad",
+                "display": "block",
+                "fill": "currentColor",
+                "margin": "0 auto",
+              },
+              "width": 40,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-ifAKCX",
+              "isStatic": true,
+              "rules": Array [
+                "
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid ",
+                "#b8b7ad",
+                ";
+",
+              ],
+            },
+            "displayName": "styled.div",
+            "render": [Function],
+            "styledComponentId": "sc-ifAKCX",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "error": false,
+            "fetching": true,
+            "loadMore": [Function],
+            "onItemClick": [Function],
+            "pagination": Object {
+              "endCursor": "",
+              "hasNextPage": false,
+            },
+            "repositories": Array [],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`SliderContent SliderContent Dom structure has not change when render repositories 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <SliderContent
+    error={false}
+    fetching={false}
+    getRepositories={[Function]}
+    onItemClick={[Function]}
+    pagination={
+      Object {
+        "endCursor": "",
+        "hasNextPage": false,
+      }
+    }
+    repositories={
+      Array [
+        Object {
+          "name": "react",
+          "stars": 116587,
+          "to": "/react",
+          "watchers": 6572,
+        },
+        Object {
+          "name": "react-native",
+          "stars": 71397,
+          "to": "/react-native",
+          "watchers": 3712,
+        },
+        Object {
+          "name": "create-react-app",
+          "stars": 59840,
+          "to": "/create-react-app",
+          "watchers": 1741,
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <ForwardRef>
+          <GithubLogo
+            height={40}
+            style={
+              Object {
+                "color": "#b8b7ad",
+                "display": "block",
+                "fill": "currentColor",
+                "margin": "0 auto",
+              }
+            }
+            width={40}
+          />
+        </ForwardRef>,
+        <SliderList
+          error={false}
+          fetching={false}
+          loadMore={[Function]}
+          onItemClick={[Function]}
+          pagination={
+            Object {
+              "endCursor": "",
+              "hasNextPage": false,
+            }
+          }
+          repositories={
+            Array [
+              Object {
+                "name": "react",
+                "stars": 116587,
+                "to": "/react",
+                "watchers": 6572,
+              },
+              Object {
+                "name": "react-native",
+                "stars": 71397,
+                "to": "/react-native",
+                "watchers": 3712,
+              },
+              Object {
+                "name": "create-react-app",
+                "stars": 59840,
+                "to": "/create-react-app",
+                "watchers": 1741,
+              },
+            ]
+          }
+        />,
+      ],
+      "className": "slider-content bm-item-list",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": <GithubLogo
+            height={40}
+            style={
+              Object {
+                "color": "#b8b7ad",
+                "display": "block",
+                "fill": "currentColor",
+                "margin": "0 auto",
+              }
+            }
+            width={40}
+          />,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "height": 40,
+            "style": Object {
+              "color": "#b8b7ad",
+              "display": "block",
+              "fill": "currentColor",
+              "margin": "0 auto",
+            },
+            "width": 40,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-ifAKCX",
+            "isStatic": true,
+            "rules": Array [
+              "
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid ",
+              "#b8b7ad",
+              ";
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "render": [Function],
+          "styledComponentId": "sc-ifAKCX",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "error": false,
+          "fetching": false,
+          "loadMore": [Function],
+          "onItemClick": [Function],
+          "pagination": Object {
+            "endCursor": "",
+            "hasNextPage": false,
+          },
+          "repositories": Array [
+            Object {
+              "name": "react",
+              "stars": 116587,
+              "to": "/react",
+              "watchers": 6572,
+            },
+            Object {
+              "name": "react-native",
+              "stars": 71397,
+              "to": "/react-native",
+              "watchers": 3712,
+            },
+            Object {
+              "name": "create-react-app",
+              "stars": 59840,
+              "to": "/create-react-app",
+              "watchers": 1741,
+            },
+          ],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <ForwardRef>
+            <GithubLogo
+              height={40}
+              style={
+                Object {
+                  "color": "#b8b7ad",
+                  "display": "block",
+                  "fill": "currentColor",
+                  "margin": "0 auto",
+                }
+              }
+              width={40}
+            />
+          </ForwardRef>,
+          <SliderList
+            error={false}
+            fetching={false}
+            loadMore={[Function]}
+            onItemClick={[Function]}
+            pagination={
+              Object {
+                "endCursor": "",
+                "hasNextPage": false,
+              }
+            }
+            repositories={
+              Array [
+                Object {
+                  "name": "react",
+                  "stars": 116587,
+                  "to": "/react",
+                  "watchers": 6572,
+                },
+                Object {
+                  "name": "react-native",
+                  "stars": 71397,
+                  "to": "/react-native",
+                  "watchers": 3712,
+                },
+                Object {
+                  "name": "create-react-app",
+                  "stars": 59840,
+                  "to": "/create-react-app",
+                  "watchers": 1741,
+                },
+              ]
+            }
+          />,
+        ],
+        "className": "slider-content bm-item-list",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": <GithubLogo
+              height={40}
+              style={
+                Object {
+                  "color": "#b8b7ad",
+                  "display": "block",
+                  "fill": "currentColor",
+                  "margin": "0 auto",
+                }
+              }
+              width={40}
+            />,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "height": 40,
+              "style": Object {
+                "color": "#b8b7ad",
+                "display": "block",
+                "fill": "currentColor",
+                "margin": "0 auto",
+              },
+              "width": 40,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-ifAKCX",
+              "isStatic": true,
+              "rules": Array [
+                "
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid ",
+                "#b8b7ad",
+                ";
+",
+              ],
+            },
+            "displayName": "styled.div",
+            "render": [Function],
+            "styledComponentId": "sc-ifAKCX",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "error": false,
+            "fetching": false,
+            "loadMore": [Function],
+            "onItemClick": [Function],
+            "pagination": Object {
+              "endCursor": "",
+              "hasNextPage": false,
+            },
+            "repositories": Array [
+              Object {
+                "name": "react",
+                "stars": 116587,
+                "to": "/react",
+                "watchers": 6572,
+              },
+              Object {
+                "name": "react-native",
+                "stars": 71397,
+                "to": "/react-native",
+                "watchers": 3712,
+              },
+              Object {
+                "name": "create-react-app",
+                "stars": 59840,
+                "to": "/create-react-app",
+                "watchers": 1741,
+              },
+            ],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

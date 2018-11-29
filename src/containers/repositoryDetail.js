@@ -60,7 +60,7 @@ const MessageWrapper = styled.div`
   padding: 20px;
 `
 
-class RepositoryDetail extends PureComponent {
+export class RepositoryDetail extends PureComponent {
   componentDidMount () {
     const { getDetail, repoName } = this.props
 

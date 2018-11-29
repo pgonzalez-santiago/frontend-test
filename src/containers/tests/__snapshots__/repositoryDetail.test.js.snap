@@ -1,0 +1,1373 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RepositoryDetail RepositoryDetail Dom structure has not change when error 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <RepositoryDetail
+    detail={null}
+    error={true}
+    fetching={false}
+    getDetail={[Function]}
+    isMobile={[Function]}
+    repoName="react"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": <ForwardRef
+        isMobile={false}
+      >
+        <span>
+          Ups something went wrong!!
+        </span>
+      </ForwardRef>,
+      "id": "page-wrap",
+      "isMobile": false,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <span>
+          Ups something went wrong!!
+        </span>,
+        "isMobile": false,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Ups something went wrong!!",
+        },
+        "ref": null,
+        "rendered": "Ups something went wrong!!",
+        "type": "span",
+      },
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-iwsKbI",
+          "isStatic": false,
+          "rules": Array [
+            "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  color: ",
+            "#b8b7ad",
+            ";
+  font-size: ",
+            [Function],
+            ";;
+  text-transform: uppercase;
+  padding: 20px;
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "render": [Function],
+        "styledComponentId": "sc-iwsKbI",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
+    },
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-gzVnrw",
+        "isStatic": false,
+        "rules": Array [
+          "
+  width: ",
+          [Function],
+          ";
+  overflow: auto;
+  position: absolute;
+  top: ",
+          [Function],
+          ";
+  right: 0;
+  left: 0;
+  bottom: 0;
+",
+        ],
+      },
+      "displayName": "styled.div",
+      "render": [Function],
+      "styledComponentId": "sc-gzVnrw",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    },
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <ForwardRef
+          isMobile={false}
+        >
+          <span>
+            Ups something went wrong!!
+          </span>
+        </ForwardRef>,
+        "id": "page-wrap",
+        "isMobile": false,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": <span>
+            Ups something went wrong!!
+          </span>,
+          "isMobile": false,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Ups something went wrong!!",
+          },
+          "ref": null,
+          "rendered": "Ups something went wrong!!",
+          "type": "span",
+        },
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-iwsKbI",
+            "isStatic": false,
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  color: ",
+              "#b8b7ad",
+              ";
+  font-size: ",
+              [Function],
+              ";;
+  text-transform: uppercase;
+  padding: 20px;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "render": [Function],
+          "styledComponentId": "sc-iwsKbI",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+      },
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-gzVnrw",
+          "isStatic": false,
+          "rules": Array [
+            "
+  width: ",
+            [Function],
+            ";
+  overflow: auto;
+  position: absolute;
+  top: ",
+            [Function],
+            ";
+  right: 0;
+  left: 0;
+  bottom: 0;
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "render": [Function],
+        "styledComponentId": "sc-gzVnrw",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`RepositoryDetail RepositoryDetail Dom structure has not change when fetching 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <RepositoryDetail
+    detail={null}
+    error={false}
+    fetching={true}
+    getDetail={[Function]}
+    isMobile={[Function]}
+    repoName="react"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": <ForwardRef
+        isMobile={false}
+      >
+        <Spinner
+          color="#b8b7ad"
+          size={50}
+        />
+      </ForwardRef>,
+      "id": "page-wrap",
+      "isMobile": false,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <Spinner
+          color="#b8b7ad"
+          size={50}
+        />,
+        "isMobile": false,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "color": "#b8b7ad",
+          "size": 50,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-iwsKbI",
+          "isStatic": false,
+          "rules": Array [
+            "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  color: ",
+            "#b8b7ad",
+            ";
+  font-size: ",
+            [Function],
+            ";;
+  text-transform: uppercase;
+  padding: 20px;
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "render": [Function],
+        "styledComponentId": "sc-iwsKbI",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
+    },
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-gzVnrw",
+        "isStatic": false,
+        "rules": Array [
+          "
+  width: ",
+          [Function],
+          ";
+  overflow: auto;
+  position: absolute;
+  top: ",
+          [Function],
+          ";
+  right: 0;
+  left: 0;
+  bottom: 0;
+",
+        ],
+      },
+      "displayName": "styled.div",
+      "render": [Function],
+      "styledComponentId": "sc-gzVnrw",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    },
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <ForwardRef
+          isMobile={false}
+        >
+          <Spinner
+            color="#b8b7ad"
+            size={50}
+          />
+        </ForwardRef>,
+        "id": "page-wrap",
+        "isMobile": false,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": <Spinner
+            color="#b8b7ad"
+            size={50}
+          />,
+          "isMobile": false,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "color": "#b8b7ad",
+            "size": 50,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-iwsKbI",
+            "isStatic": false,
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  color: ",
+              "#b8b7ad",
+              ";
+  font-size: ",
+              [Function],
+              ";;
+  text-transform: uppercase;
+  padding: 20px;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "render": [Function],
+          "styledComponentId": "sc-iwsKbI",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+      },
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-gzVnrw",
+          "isStatic": false,
+          "rules": Array [
+            "
+  width: ",
+            [Function],
+            ";
+  overflow: auto;
+  position: absolute;
+  top: ",
+            [Function],
+            ";
+  right: 0;
+  left: 0;
+  bottom: 0;
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "render": [Function],
+        "styledComponentId": "sc-gzVnrw",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`RepositoryDetail RepositoryDetail Dom structure has not change when render repository detail 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <RepositoryDetail
+    detail={
+      Object {
+        "description": "A framework for building native apps with React.",
+        "forks": 15461,
+        "homepageUrl": "https://facebook.github.io/react-native/",
+        "issues": 14658,
+        "name": "react-native",
+        "projectsUrl": "https://github.com/facebook/react-native/projects",
+        "pullRequests": 7625,
+        "releases": 15461,
+        "stars": 71397,
+        "watchers": 3712,
+      }
+    }
+    error={false}
+    fetching={false}
+    getDetail={[Function]}
+    isMobile={[Function]}
+    repoName="react"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": <ForwardRef>
+        <ForwardRef>
+          Repository details
+        </ForwardRef>
+        <ForwardRef>
+          <p>
+            Name: 
+            react-native
+          </p>
+          <p>
+            Description: 
+            A framework for building native apps with React.
+          </p>
+          <p>
+            Forks: 
+            15461
+          </p>
+          <p>
+            Issues: 
+             
+            14658
+          </p>
+          <p>
+            Pull requests: 
+            7625
+          </p>
+          <p>
+            Release: 
+            15461
+          </p>
+          <p>
+            Stars: 
+            71397
+          </p>
+          <p>
+            Watchers: 
+            3712
+          </p>
+        </ForwardRef>
+        <Connect(ContributorsList)
+          repoName="react"
+        />
+      </ForwardRef>,
+      "id": "page-wrap",
+      "isMobile": false,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <ForwardRef>
+            Repository details
+          </ForwardRef>,
+          <ForwardRef>
+            <p>
+              Name: 
+              react-native
+            </p>
+            <p>
+              Description: 
+              A framework for building native apps with React.
+            </p>
+            <p>
+              Forks: 
+              15461
+            </p>
+            <p>
+              Issues: 
+               
+              14658
+            </p>
+            <p>
+              Pull requests: 
+              7625
+            </p>
+            <p>
+              Release: 
+              15461
+            </p>
+            <p>
+              Stars: 
+              71397
+            </p>
+            <p>
+              Watchers: 
+              3712
+            </p>
+          </ForwardRef>,
+          <Connect(ContributorsList)
+            repoName="react"
+          />,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": "Repository details",
+          },
+          "ref": null,
+          "rendered": "Repository details",
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-htoDjs",
+              "isStatic": true,
+              "rules": Array [
+                "
+  padding-bottom: 20px;
+  border-bottom: 2px solid;
+  text-transform: uppercase;
+  padding-right: 35px;
+",
+              ],
+            },
+            "displayName": "styled.h1",
+            "render": [Function],
+            "styledComponentId": "sc-htoDjs",
+            "target": "h1",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <p>
+                Name: 
+                react-native
+              </p>,
+              <p>
+                Description: 
+                A framework for building native apps with React.
+              </p>,
+              <p>
+                Forks: 
+                15461
+              </p>,
+              <p>
+                Issues: 
+                 
+                14658
+              </p>,
+              <p>
+                Pull requests: 
+                7625
+              </p>,
+              <p>
+                Release: 
+                15461
+              </p>,
+              <p>
+                Stars: 
+                71397
+              </p>,
+              <p>
+                Watchers: 
+                3712
+              </p>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Name: ",
+                  "react-native",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Name: ",
+                "react-native",
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Description: ",
+                  "A framework for building native apps with React.",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Description: ",
+                "A framework for building native apps with React.",
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Forks: ",
+                  15461,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Forks: ",
+                15461,
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Issues: ",
+                  " ",
+                  14658,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Issues: ",
+                " ",
+                14658,
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Pull requests: ",
+                  7625,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Pull requests: ",
+                7625,
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Release: ",
+                  15461,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Release: ",
+                15461,
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Stars: ",
+                  71397,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Stars: ",
+                71397,
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Watchers: ",
+                  3712,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Watchers: ",
+                3712,
+              ],
+              "type": "p",
+            },
+          ],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-dnqmqq",
+              "isStatic": true,
+              "rules": Array [
+                "
+  padding-top: 10px;
+  padding-bottom: 20px;
+",
+              ],
+            },
+            "displayName": "styled.div",
+            "render": [Function],
+            "styledComponentId": "sc-dnqmqq",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "repoName": "react",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bZQynM",
+          "isStatic": true,
+          "rules": Array [
+            "
+  position: relative;
+  top: 35px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30px;
+  padding-top: 0;
+  color: ",
+            "#24292e",
+            ";
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "render": [Function],
+        "styledComponentId": "sc-bZQynM",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
+    },
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-gzVnrw",
+        "isStatic": false,
+        "rules": Array [
+          "
+  width: ",
+          [Function],
+          ";
+  overflow: auto;
+  position: absolute;
+  top: ",
+          [Function],
+          ";
+  right: 0;
+  left: 0;
+  bottom: 0;
+",
+        ],
+      },
+      "displayName": "styled.div",
+      "render": [Function],
+      "styledComponentId": "sc-gzVnrw",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    },
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <ForwardRef>
+          <ForwardRef>
+            Repository details
+          </ForwardRef>
+          <ForwardRef>
+            <p>
+              Name: 
+              react-native
+            </p>
+            <p>
+              Description: 
+              A framework for building native apps with React.
+            </p>
+            <p>
+              Forks: 
+              15461
+            </p>
+            <p>
+              Issues: 
+               
+              14658
+            </p>
+            <p>
+              Pull requests: 
+              7625
+            </p>
+            <p>
+              Release: 
+              15461
+            </p>
+            <p>
+              Stars: 
+              71397
+            </p>
+            <p>
+              Watchers: 
+              3712
+            </p>
+          </ForwardRef>
+          <Connect(ContributorsList)
+            repoName="react"
+          />
+        </ForwardRef>,
+        "id": "page-wrap",
+        "isMobile": false,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <ForwardRef>
+              Repository details
+            </ForwardRef>,
+            <ForwardRef>
+              <p>
+                Name: 
+                react-native
+              </p>
+              <p>
+                Description: 
+                A framework for building native apps with React.
+              </p>
+              <p>
+                Forks: 
+                15461
+              </p>
+              <p>
+                Issues: 
+                 
+                14658
+              </p>
+              <p>
+                Pull requests: 
+                7625
+              </p>
+              <p>
+                Release: 
+                15461
+              </p>
+              <p>
+                Stars: 
+                71397
+              </p>
+              <p>
+                Watchers: 
+                3712
+              </p>
+            </ForwardRef>,
+            <Connect(ContributorsList)
+              repoName="react"
+            />,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Repository details",
+            },
+            "ref": null,
+            "rendered": "Repository details",
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-htoDjs",
+                "isStatic": true,
+                "rules": Array [
+                  "
+  padding-bottom: 20px;
+  border-bottom: 2px solid;
+  text-transform: uppercase;
+  padding-right: 35px;
+",
+                ],
+              },
+              "displayName": "styled.h1",
+              "render": [Function],
+              "styledComponentId": "sc-htoDjs",
+              "target": "h1",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            },
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <p>
+                  Name: 
+                  react-native
+                </p>,
+                <p>
+                  Description: 
+                  A framework for building native apps with React.
+                </p>,
+                <p>
+                  Forks: 
+                  15461
+                </p>,
+                <p>
+                  Issues: 
+                   
+                  14658
+                </p>,
+                <p>
+                  Pull requests: 
+                  7625
+                </p>,
+                <p>
+                  Release: 
+                  15461
+                </p>,
+                <p>
+                  Stars: 
+                  71397
+                </p>,
+                <p>
+                  Watchers: 
+                  3712
+                </p>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Name: ",
+                    "react-native",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Name: ",
+                  "react-native",
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Description: ",
+                    "A framework for building native apps with React.",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Description: ",
+                  "A framework for building native apps with React.",
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Forks: ",
+                    15461,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Forks: ",
+                  15461,
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Issues: ",
+                    " ",
+                    14658,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Issues: ",
+                  " ",
+                  14658,
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Pull requests: ",
+                    7625,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Pull requests: ",
+                  7625,
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Release: ",
+                    15461,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Release: ",
+                  15461,
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Stars: ",
+                    71397,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Stars: ",
+                  71397,
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Watchers: ",
+                    3712,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Watchers: ",
+                  3712,
+                ],
+                "type": "p",
+              },
+            ],
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-dnqmqq",
+                "isStatic": true,
+                "rules": Array [
+                  "
+  padding-top: 10px;
+  padding-bottom: 20px;
+",
+                ],
+              },
+              "displayName": "styled.div",
+              "render": [Function],
+              "styledComponentId": "sc-dnqmqq",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            },
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "repoName": "react",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bZQynM",
+            "isStatic": true,
+            "rules": Array [
+              "
+  position: relative;
+  top: 35px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30px;
+  padding-top: 0;
+  color: ",
+              "#24292e",
+              ";
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "render": [Function],
+          "styledComponentId": "sc-bZQynM",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+      },
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-gzVnrw",
+          "isStatic": false,
+          "rules": Array [
+            "
+  width: ",
+            [Function],
+            ";
+  overflow: auto;
+  position: absolute;
+  top: ",
+            [Function],
+            ";
+  right: 0;
+  left: 0;
+  bottom: 0;
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "render": [Function],
+        "styledComponentId": "sc-gzVnrw",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

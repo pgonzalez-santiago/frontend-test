@@ -37,7 +37,7 @@ const MessageWrapper = styled.div`
   padding: 20px;
 `
 
-class ContributorsList extends PureComponent {
+export class ContributorsList extends PureComponent {
   componentDidMount () {
     const { getContributors, repoName } = this.props
 
