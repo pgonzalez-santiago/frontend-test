@@ -43,7 +43,7 @@ yarn storybook
 ## NOTES
 - **Why the application sort the repositories by stars instead of by watchers?**
 
-  The application is using the latest version of the Github API (version 4) to get all of the repositories from facebook. As we can see in [documentation](https://developer.github.com/v4/enum/repositoryorderfield/) of the API it is not possible to sort by watchers. Due to the data is paginated with a limit of 100 items per request I decided to sort the repositories by stars.
+  The application is using the latest version of the Github API (GraphQL - version 4) to get all of the repositories from facebook. As we can see in [documentation](https://developer.github.com/v4/enum/repositoryorderfield/) of the API it is not possible to sort by watchers. Due to the data is paginated with a limit of 100 items per request I decided to sort the repositories by stars.
 
 - **Why is the application using two versions of the Github API to get the contributors?**
 
