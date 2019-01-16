@@ -21,8 +21,8 @@ export const INITIAL_STATE = {
 export const request = (state = INITIAL_STATE, action) => {
   return {
     ...state,
-    fetching: true,
     error:    false,
+    fetching: true,
   }
 }
 
@@ -30,9 +30,9 @@ export const request = (state = INITIAL_STATE, action) => {
 export const success = (state = INITIAL_STATE, { contributors }) => {
   return {
     ...state,
-    fetching: false,
-    error:    false,
     contributors,
+    error:    false,
+    fetching: false,
   }
 }
 
@@ -40,8 +40,8 @@ export const success = (state = INITIAL_STATE, { contributors }) => {
 export const failure = (state = INITIAL_STATE, action) => {
   return {
     ...state,
-    fetching: false,
     error:    true,
+    fetching: false,
   }
 }
 

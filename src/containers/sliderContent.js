@@ -67,7 +67,7 @@ export class SliderContent extends PureComponent {
           fetching={fetching}
           error={error}
           onItemClick={onItemClick}
-          loadMore={(cursor) => this.getRepos(cursor)}
+          loadMore={cursor => this.getRepos(cursor)}
           pagination={pagination}
           repositories={repositories}
         />

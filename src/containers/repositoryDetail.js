@@ -31,7 +31,7 @@ const Container = styled.div`
   width: 'auto';
   overflow: auto;
   position: absolute;
-  top: ${(props) => props.isMobile ? '80px' : 0};
+  top: ${props => props.isMobile ? '80px' : 0};
   right: 0;
   left: 0;
   bottom: 0;
@@ -55,7 +55,7 @@ const MessageWrapper = styled.div`
   align-items: center;
   justify-content: center;
   color: ${Colors.primaryColor};
-  font-size: ${(props) => props.isMobile ? '20px' : '30px'};;
+  font-size: ${props => props.isMobile ? '20px' : '30px'};;
   text-transform: uppercase;
   padding: 20px;
 `
@@ -165,7 +165,7 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    getDetail: (query) => dispatch(RepositoryDetailActions.request(query)),
+    getDetail: query => dispatch(RepositoryDetailActions.request(query)),
   }
 }
 

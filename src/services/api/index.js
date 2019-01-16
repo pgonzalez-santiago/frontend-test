@@ -7,7 +7,7 @@ const config = {
   GITHUB_CLIENT_SECRET: '344c4afd56d6ee15903bf5e81af2e4e89e4039b0',
 }
 
-const setAuthHeaders = (name, pwd) => {
+const setAuthHeaders = (name = '', pwd = '') => {
   const bytes = name.trim() + ':' + pwd.trim()
   const encoded = base64.encode(bytes)
 
@@ -46,7 +46,7 @@ const setHeaders = () => {
   return { headers }
 }
 
-const graphqlRequest = (query) =>
+const graphqlRequest = query =>
   api.post('/graphql', { query }, setHeaders())
 
 // NOTE: I needed to user version 3 of the github API because contributors

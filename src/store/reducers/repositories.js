@@ -27,8 +27,8 @@ export const INITIAL_STATE = {
 export const request = (state = INITIAL_STATE, action) => {
   return {
     ...state,
-    fetching: true,
     error:    false,
+    fetching: true,
   }
 }
 
@@ -38,8 +38,8 @@ export const success = (state = INITIAL_STATE, { payload }) => {
 
   return {
     ...state,
-    fetching: false,
     error:    false,
+    fetching: false,
     list:     concat(state.list, repositories),
     pagination,
   }
@@ -49,8 +49,8 @@ export const success = (state = INITIAL_STATE, { payload }) => {
 export const failure = (state = INITIAL_STATE, action) => {
   return {
     ...state,
-    fetching: false,
     error:    true,
+    fetching: false,
   }
 }
 
